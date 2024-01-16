@@ -8,8 +8,6 @@
 import Foundation
 
 struct SchoolSelectionModel {
-  
-    var textFieldContent: String
     
     var schoolList: [SchoolModel]?
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 class SchoolSelectionViewModel: ObservableObject {
-    @Published var school = SchoolSelectionModel(textFieldContent: "")
+    @Published var school = SchoolSelectionModel()
     
     @Published var content: String = ""
     
