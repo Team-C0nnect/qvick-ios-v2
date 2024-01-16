@@ -17,7 +17,6 @@ class SchoolSelectionViewModel: ObservableObject {
     
     var schoolList: [SchoolModel]? {
         var schoolList = school.schoolList
-        
         return schoolList
     }
 }

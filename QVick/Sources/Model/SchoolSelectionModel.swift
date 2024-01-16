@@ -15,7 +15,6 @@ struct SchoolSelectionModel {
 }
 
 struct SchoolModel {
-    
     var schoolName: String
     var schoolAddress: String
 }
