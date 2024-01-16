@@ -5,7 +5,7 @@
 //  Created by dgsw8th36 on 1/16/24.
 //
 
-import Foundation
+import SwiftUI
 
 struct PersonalDataModel {
     
@@ -13,4 +13,7 @@ struct PersonalDataModel {
     
     var isClicked: Bool
     
+    var url: String
+    
 }
+

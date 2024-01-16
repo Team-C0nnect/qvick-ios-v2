@@ -5,13 +5,15 @@
 //  Created by dgsw8th36 on 1/16/24.
 //
 
-import Foundation
+import SwiftUI
 
 class PersonalDataViewModel: ObservableObject {
-    @Published var personModel = PersonalDataModel(label: "", isClicked: false)
+    @Published var personModel: [PersonalDataModel] = [
+        PersonalDataModel(label: "개인정보 처리방침", isClicked: false, url: "")
+    ]
     
-    var label: String {
-        var label = personModel.label
-        return label
+    func getClickedSelection(_ index: Int) {
+        self.personModel[index].isClicked.toggle()
     }
+    
 }

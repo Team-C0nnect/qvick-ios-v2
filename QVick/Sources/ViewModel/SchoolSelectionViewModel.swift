@@ -13,7 +13,7 @@ class SchoolSelectionViewModel: ObservableObject {
     @Published var content: String = ""
     
     var schoolList: [SchoolModel]? {
-        var schoolList = school.schoolList
+        let schoolList = school.schoolList
         
         return schoolList
     }
