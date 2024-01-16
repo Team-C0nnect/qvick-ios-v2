@@ -10,10 +10,7 @@ import Foundation
 class SchoolSelectionViewModel: ObservableObject {
     @Published var school = SchoolSelectionModel(textFieldContent: "")
     
-    var content: String {
-        var textFieldContnet = school.textFieldContent
-        return textFieldContnet
-    }
+    @Published var content: String = ""
     
     var schoolList: [SchoolModel]? {
         var schoolList = school.schoolList
