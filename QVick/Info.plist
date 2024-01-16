@@ -4,10 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>AzeretMono-Bold.ttf</string>
-		<string>AzeretMono-SemiBold.ttf</string>
-		<string>AzeretMono-ExtraBold.ttf</string>
-		<string>AzeretMono-Regular.ttf</string>
+		<string>Judson-Bold.ttf</string>
+		<string>Judson-Italic.ttf</string>
+		<string>Judson-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
