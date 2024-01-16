@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42AEB7372B56503600C6B1CB /* SchoolSelectionVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */; };
+		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */; };
 		453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F92B56278E001C043C /* SchoolAskButton.swift */; };
 		453B00FD2B562B5B001C043C /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00FC2B562B5B001C043C /* FontExt.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionVIewModel.swift; sourceTree = "<group>"; };
+		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionCell.swift; sourceTree = "<group>"; };
 		453B00F92B56278E001C043C /* SchoolAskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAskButton.swift; sourceTree = "<group>"; };
 		453B00FC2B562B5B001C043C /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				755641442B56108800F15ACD /* ExampleModel.swift */,
+				42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
+				42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -232,7 +238,9 @@
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
+				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
+				42AEB7372B56503600C6B1CB /* SchoolSelectionVIewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

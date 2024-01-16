@@ -1,5 +1,5 @@
 //
-//  SchoolSelectionViewModel.swift
+//  SchoolSelectionVIewModel.swift
 //  QVick
 //
 //  Created by dgsw8th32 on 1/16/24.
@@ -17,6 +17,7 @@ class SchoolSelectionViewModel: ObservableObject {
     
     var schoolList: [SchoolModel]? {
         var schoolList = school.schoolList
+        
         return schoolList
     }
 }
