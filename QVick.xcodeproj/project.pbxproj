@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
+		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
 		453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */; };
 		453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F92B56278E001C043C /* SchoolAskButton.swift */; };
 		453B00FD2B562B5B001C043C /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00FC2B562B5B001C043C /* FontExt.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
+		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
 		453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionCell.swift; sourceTree = "<group>"; };
 		453B00F92B56278E001C043C /* SchoolAskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAskButton.swift; sourceTree = "<group>"; };
 		453B00FC2B562B5B001C043C /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				755641462B56116500F15ACD /* ExampleComponent.swift */,
 				453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */,
 				453B00F92B56278E001C043C /* SchoolAskButton.swift */,
+				42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
+				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
