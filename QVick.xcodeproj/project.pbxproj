@@ -11,10 +11,9 @@
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
 		7509BB232B4B88F6005A62AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB222B4B88F6005A62AD /* HomeView.swift */; };
-		75348EFC2B4B8C300037FB2C /* AzeretMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75348EFB2B4B8C300037FB2C /* AzeretMono-Bold.ttf */; };
-		75348EFE2B4B8C3B0037FB2C /* AzeretMono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75348EFD2B4B8C3B0037FB2C /* AzeretMono-ExtraBold.ttf */; };
-		75348F002B4B8C450037FB2C /* AzeretMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75348EFF2B4B8C450037FB2C /* AzeretMono-Regular.ttf */; };
-		75348F032B4B8E030037FB2C /* AzeretMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75348F022B4B8E030037FB2C /* AzeretMono-SemiBold.ttf */; };
+		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
+		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
+		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +22,10 @@
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7509BB182B4B88A7005A62AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7509BB222B4B88F6005A62AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		75348EFB2B4B8C300037FB2C /* AzeretMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AzeretMono-Bold.ttf"; sourceTree = "<group>"; };
-		75348EFD2B4B8C3B0037FB2C /* AzeretMono-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AzeretMono-ExtraBold.ttf"; sourceTree = "<group>"; };
-		75348EFF2B4B8C450037FB2C /* AzeretMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AzeretMono-Regular.ttf"; sourceTree = "<group>"; };
 		75348F012B4B8C4C0037FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		75348F022B4B8E030037FB2C /* AzeretMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AzeretMono-SemiBold.ttf"; path = "../../../../../../Downloads/Azeret_Mono/static/AzeretMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
+		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
+		7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +87,9 @@
 		75348EF92B4B8C070037FB2C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				75348F022B4B8E030037FB2C /* AzeretMono-SemiBold.ttf */,
-				75348EFB2B4B8C300037FB2C /* AzeretMono-Bold.ttf */,
-				75348EFD2B4B8C3B0037FB2C /* AzeretMono-ExtraBold.ttf */,
-				75348EFF2B4B8C450037FB2C /* AzeretMono-Regular.ttf */,
+				7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */,
+				755641382B560C0D00F15ACD /* Judson-Italic.ttf */,
+				755641392B560C0D00F15ACD /* Judson-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -156,10 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
-				75348F002B4B8C450037FB2C /* AzeretMono-Regular.ttf in Resources */,
-				75348EFE2B4B8C3B0037FB2C /* AzeretMono-ExtraBold.ttf in Resources */,
-				75348EFC2B4B8C300037FB2C /* AzeretMono-Bold.ttf in Resources */,
-				75348F032B4B8E030037FB2C /* AzeretMono-SemiBold.ttf in Resources */,
+				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
+				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
+				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
