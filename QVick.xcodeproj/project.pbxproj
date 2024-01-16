@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42AEB7372B56503600C6B1CB /* SchoolSelectionVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */; };
+		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */; };
 		453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F92B56278E001C043C /* SchoolAskButton.swift */; };
@@ -16,6 +16,7 @@
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
+		7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */; };
 		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
 		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
 		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
@@ -25,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionVIewModel.swift; sourceTree = "<group>"; };
+		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionCell.swift; sourceTree = "<group>"; };
 		453B00F92B56278E001C043C /* SchoolAskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAskButton.swift; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7509BB182B4B88A7005A62AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionView.swift; sourceTree = "<group>"; };
 		75348F012B4B8C4C0037FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
 		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				7509BB162B4B88A5005A62AD /* ContentView.swift */,
+				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
-				42AEB7362B56503600C6B1CB /* SchoolSelectionVIewModel.swift */,
+				42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
+				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
@@ -240,7 +244,7 @@
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
-				42AEB7372B56503600C6B1CB /* SchoolSelectionVIewModel.swift in Sources */,
+				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
