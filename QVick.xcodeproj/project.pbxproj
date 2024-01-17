@@ -30,6 +30,9 @@
 		755641472B56116500F15ACD /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641462B56116500F15ACD /* ExampleComponent.swift */; };
 		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
+		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
+		75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC41B2B579F7300C26726 /* GoogleSignInSwift */; };
+		75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC41D2B579F9800C26726 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,7 @@
 		755641462B56116500F15ACD /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		75ECC41D2B579F9800C26726 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */,
 				7513C5202B57753D00A198E3 /* Alamofire in Frameworks */,
+				75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +184,7 @@
 				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
 				42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */,
 				453B01022B5666BE001C043C /* PersonalDataViewModel.swift */,
+				75ECC41D2B579F9800C26726 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +214,8 @@
 			name = QVick;
 			packageProductDependencies = (
 				7513C51F2B57753D00A198E3 /* Alamofire */,
+				75ECC4192B579F7300C26726 /* GoogleSignIn */,
+				75ECC41B2B579F7300C26726 /* GoogleSignInSwift */,
 			);
 			productName = QVick;
 			productReference = 7509BB112B4B88A5005A62AD /* QVick.app */;
@@ -238,6 +247,7 @@
 			mainGroup = 7509BB082B4B88A5005A62AD;
 			packageReferences = (
 				7513C51E2B57753D00A198E3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				75ECC4182B579F7300C26726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 7509BB122B4B88A5005A62AD /* Products */;
 			projectDirPath = "";
@@ -284,6 +294,7 @@
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
+				75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +511,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		75ECC4182B579F7300C26726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -507,6 +526,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7513C51E2B57753D00A198E3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		75ECC4192B579F7300C26726 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75ECC4182B579F7300C26726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		75ECC41B2B579F7300C26726 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75ECC4182B579F7300C26726 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
