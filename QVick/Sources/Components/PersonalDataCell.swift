@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct PersonalDataCell: View {
-
+    
     var label: String
+    var url: String
     let action: () -> Void
-    let navigate: () -> Void
     var isClicked: Bool
     
-    init(label: String,  isClicked: Bool, action: @escaping () -> Void, navigate: @escaping () -> Void ) {
+    init(label: String, url: String, isClicked: Bool, action: @escaping () -> Void) {
         self.label = label
+        self.url = url
         self.isClicked = isClicked
         self.action = action
-        self.navigate = navigate
     }
     
+    @State var isPresented: Bool = false
     
     var body: some View {
         HStack {
@@ -50,16 +51,21 @@ struct PersonalDataCell: View {
             
             Spacer()
             
-            Button(action: {
-                print("이용약관 클릭!")
-                navigate()
-            }, label: {
+            Button {
+                isPresented.toggle()
+            } label: {
                 Image(systemName: "chevron.right")
                     .resizable()
                     .frame(width: 10, height: 20)
                     .foregroundStyle(.white)
-            })
+                    
+            }
             .padding(.trailing)
+        }
+        .sheet(isPresented: $isPresented) {
+            WebView(url: url)
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
         }
     }
 }
