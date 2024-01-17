@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426B53512B578F7F00BDE077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53502B578F7F00BDE077 /* LoginView.swift */; };
+		426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53522B579B3100BDE077 /* GetInfoModel.swift */; };
+		426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */; };
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		426B53502B578F7F00BDE077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		426B53522B579B3100BDE077 /* GetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoModel.swift; sourceTree = "<group>"; };
+		426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoViewModel.swift; sourceTree = "<group>"; };
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				7509BB162B4B88A5005A62AD /* ContentView.swift */,
 				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
 				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
+				426B53502B578F7F00BDE077 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 				755641442B56108800F15ACD /* ExampleModel.swift */,
 				42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */,
 				453B01002B56662B001C043C /* PersonalDataModel.swift */,
+				426B53522B579B3100BDE077 /* GetInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
 				42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */,
 				453B01022B5666BE001C043C /* PersonalDataViewModel.swift */,
+				426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -273,15 +282,18 @@
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
+				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
+				426B53512B578F7F00BDE077 /* LoginView.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
+				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
