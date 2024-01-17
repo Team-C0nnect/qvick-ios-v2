@@ -11,9 +11,9 @@ struct PersonalDataModel {
     
     var label: String
     
-    var isClicked: Bool
+    var isClicked: Bool = false
     
-    var url: String
+    let url: String
     
 }
 

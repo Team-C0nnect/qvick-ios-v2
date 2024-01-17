@@ -10,17 +10,23 @@ import SwiftUI
 struct PersonalDataCell: View {
 
     var label: String
-    @State var isClicked: Bool = false
+    let action: () -> Void
+    let navigate: () -> Void
+    var isClicked: Bool
     
-    init(label: String) {
+    init(label: String,  isClicked: Bool, action: @escaping () -> Void, navigate: @escaping () -> Void ) {
         self.label = label
+        self.isClicked = isClicked
+        self.action = action
+        self.navigate = navigate
     }
+    
     
     var body: some View {
         HStack {
             
             Button(action: {
-                isClicked.toggle()
+                action()
             }, label: {
                 Circle()
                     .frame(width: 25, height: 25)
@@ -46,6 +52,7 @@ struct PersonalDataCell: View {
             
             Button(action: {
                 print("이용약관 클릭!")
+                navigate()
             }, label: {
                 Image(systemName: "chevron.right")
                     .resizable()
@@ -57,20 +64,3 @@ struct PersonalDataCell: View {
     }
 }
 
-#Preview {
-    ZStack {
-        Color(red: 52/255, green: 58/255, blue: 71/255)
-        PersonalDataCell(label: "서비스 이용약관(필수)")
-            .padding(.bottom, 100)
-        
-        PersonalDataCell(label: "개인정보 수집/이용 동의(필수)")
-        
-        PersonalDataCell(label: "개인정보 제3자 정보제공 동의(필수)")
-            .padding(.top, 100)
-        
-        PersonalDataCell(label: "신민호랑 데이트(선택)")
-            .padding(.top, 200)
-
-    }
-    .ignoresSafeArea()
-}

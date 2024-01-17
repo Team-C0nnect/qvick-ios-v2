@@ -20,6 +20,8 @@
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
 		7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */; };
+		7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513C51C2B56764200A198E3 /* PersonalDataView.swift */; };
+		7513C5202B57753D00A198E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7513C51F2B57753D00A198E3 /* Alamofire */; };
 		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
 		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
 		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
@@ -43,6 +45,7 @@
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7509BB182B4B88A7005A62AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionView.swift; sourceTree = "<group>"; };
+		7513C51C2B56764200A198E3 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
 		75348F012B4B8C4C0037FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
 		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7513C5202B57753D00A198E3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,7 @@
 			children = (
 				7509BB162B4B88A5005A62AD /* ContentView.swift */,
 				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
+				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +191,9 @@
 			dependencies = (
 			);
 			name = QVick;
+			packageProductDependencies = (
+				7513C51F2B57753D00A198E3 /* Alamofire */,
+			);
 			productName = QVick;
 			productReference = 7509BB112B4B88A5005A62AD /* QVick.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 7509BB082B4B88A5005A62AD;
+			packageReferences = (
+				7513C51E2B57753D00A198E3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7509BB122B4B88A5005A62AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +263,7 @@
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
+				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
@@ -462,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7513C51E2B57753D00A198E3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7513C51F2B57753D00A198E3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7513C51E2B57753D00A198E3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7509BB092B4B88A5005A62AD /* Project object */;
 }
