@@ -16,6 +16,8 @@
 		453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00FE2B562FC3001C043C /* ColorExt.swift */; };
 		453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01002B56662B001C043C /* PersonalDataModel.swift */; };
 		453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01022B5666BE001C043C /* PersonalDataViewModel.swift */; };
+		453B01092B579A2A001C043C /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01082B579A2A001C043C /* NextButton.swift */; };
+		453B010B2B579F4E001C043C /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B010A2B579F4E001C043C /* ViewExt.swift */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		453B00FE2B562FC3001C043C /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		453B01002B56662B001C043C /* PersonalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataModel.swift; sourceTree = "<group>"; };
 		453B01022B5666BE001C043C /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
+		453B01082B579A2A001C043C /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		453B010A2B579F4E001C043C /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			children = (
 				453B00FC2B562B5B001C043C /* FontExt.swift */,
 				453B00FE2B562FC3001C043C /* ColorExt.swift */,
+				453B010A2B579F4E001C043C /* ViewExt.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */,
 				75ECC4142B5798EC00C26726 /* LoginButton.swift */,
 				75ECC4152B5798EC00C26726 /* WebView.swift */,
+				453B01082B579A2A001C043C /* NextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -274,10 +280,12 @@
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
+				453B01092B579A2A001C043C /* NextButton.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
+				453B010B2B579F4E001C043C /* ViewExt.swift in Sources */,
 				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
