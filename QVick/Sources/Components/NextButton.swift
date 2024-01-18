@@ -42,7 +42,7 @@ struct NextButton: View {
             }
             
         }
-        .ignoresSafeArea(.container)
+        .ignoresSafeArea(.all, edges: .bottom)
         
     }
 }
