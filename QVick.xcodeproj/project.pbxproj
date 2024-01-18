@@ -41,6 +41,9 @@
 		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
 		75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC41B2B579F7300C26726 /* GoogleSignInSwift */; };
 		75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC41D2B579F9800C26726 /* LoginViewModel.swift */; };
+		75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789822B58B716004A80BD /* LeaveOutCell.swift */; };
+		75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789842B58C019004A80BD /* LeaveOutList.swift */; };
+		75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789862B58CECB004A80BD /* LeaveOutModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		75ECC41D2B579F9800C26726 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		75F789822B58B716004A80BD /* LeaveOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutCell.swift; sourceTree = "<group>"; };
+		75F789842B58C019004A80BD /* LeaveOutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutList.swift; sourceTree = "<group>"; };
+		75F789862B58CECB004A80BD /* LeaveOutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,8 @@
 				75ECC4142B5798EC00C26726 /* LoginButton.swift */,
 				75ECC4152B5798EC00C26726 /* WebView.swift */,
 				453B01082B579A2A001C043C /* NextButton.swift */,
+				75F789822B58B716004A80BD /* LeaveOutCell.swift */,
+				75F789842B58C019004A80BD /* LeaveOutList.swift */,
 				426B53562B58B6ED00BDE077 /* QRCheckButton.swift */,
 				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 			);
@@ -197,6 +205,7 @@
 				42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */,
 				453B01002B56662B001C043C /* PersonalDataModel.swift */,
 				426B53522B579B3100BDE077 /* GetInfoModel.swift */,
+				75F789862B58CECB004A80BD /* LeaveOutModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
+				75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */,
 				453B01092B579A2A001C043C /* NextButton.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
@@ -321,6 +331,7 @@
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
+				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
@@ -328,6 +339,7 @@
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
 				75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
+				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
