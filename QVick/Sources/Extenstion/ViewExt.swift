@@ -18,3 +18,10 @@ extension View {
     }
     
 }
+
+@resultBuilder
+struct LeaveOutBuilder {
+    static func buildBlock(_ components: LeaveOutModel...) -> [LeaveOutModel] {
+        components
+    }
+}

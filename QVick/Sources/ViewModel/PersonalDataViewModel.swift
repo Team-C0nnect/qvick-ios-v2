@@ -19,8 +19,4 @@ class PersonalDataViewModel: ObservableObject {
         self.personModel[index].isClicked.toggle()
     }
     
-    func getHtmlData() {
-        print("getHtmlData")
-    }
-    
 }

@@ -12,7 +12,7 @@ class GetInfoViewModel: ObservableObject {
     @Published var info = GetInfoModel(schoolNumber: "1116")
     
     var content: String {
-        var content = info.schoolNumber
+        let content = info.schoolNumber
         return content
     }
     
