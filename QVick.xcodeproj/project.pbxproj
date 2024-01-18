@@ -10,6 +10,8 @@
 		426B53512B578F7F00BDE077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53502B578F7F00BDE077 /* LoginView.swift */; };
 		426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53522B579B3100BDE077 /* GetInfoModel.swift */; };
 		426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */; };
+		426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53562B58B6ED00BDE077 /* QRCheckButton.swift */; };
+		426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53582B58C41400BDE077 /* HamburgerButton.swift */; };
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
@@ -44,6 +46,8 @@
 		426B53502B578F7F00BDE077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		426B53522B579B3100BDE077 /* GetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoModel.swift; sourceTree = "<group>"; };
 		426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoViewModel.swift; sourceTree = "<group>"; };
+		426B53562B58B6ED00BDE077 /* QRCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCheckButton.swift; sourceTree = "<group>"; };
+		426B53582B58C41400BDE077 /* HamburgerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				75ECC4142B5798EC00C26726 /* LoginButton.swift */,
 				75ECC4152B5798EC00C26726 /* WebView.swift */,
 				453B01082B579A2A001C043C /* NextButton.swift */,
+				426B53562B58B6ED00BDE077 /* QRCheckButton.swift */,
+				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
+				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
+				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
 				75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */,
