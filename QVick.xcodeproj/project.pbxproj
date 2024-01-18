@@ -24,6 +24,7 @@
 		453B01092B579A2A001C043C /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01082B579A2A001C043C /* NextButton.swift */; };
 		453B010B2B579F4E001C043C /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B010A2B579F4E001C043C /* ViewExt.swift */; };
 		453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B010C2B58B65A001C043C /* GetInfoView.swift */; };
+		453B01112B58E12A001C043C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01102B58E12A001C043C /* MainView.swift */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		453B01082B579A2A001C043C /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		453B010A2B579F4E001C043C /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		453B010C2B58B65A001C043C /* GetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoView.swift; sourceTree = "<group>"; };
+		453B01102B58E12A001C043C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
 				426B53502B578F7F00BDE077 /* LoginView.swift */,
 				453B010C2B58B65A001C043C /* GetInfoView.swift */,
+				453B01102B58E12A001C043C /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
 				75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */,
+				453B01112B58E12A001C043C /* MainView.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);
