@@ -9,7 +9,9 @@ import SwiftUI
 
 struct QRCheckButton: View {
 
-    @State var isPresented: Bool
+    @State var isPresented: Bool = false
+        
+    let view: () -> AnyView
     
     var body: some View {
         
@@ -46,7 +48,7 @@ struct QRCheckButton: View {
             })
             .tint(.black)
             .sheet(isPresented: $isPresented) {
-                EmptyView()
+                view()
                     .presentationDetents([.height(700)])
             }
         }
@@ -55,5 +57,7 @@ struct QRCheckButton: View {
 }
 
 #Preview {
-    QRCheckButton(isPresented: false)
+    QRCheckButton {
+        AnyView(EmptyView())
+    }
 }
