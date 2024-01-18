@@ -23,6 +23,7 @@
 		453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01022B5666BE001C043C /* PersonalDataViewModel.swift */; };
 		453B01092B579A2A001C043C /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01082B579A2A001C043C /* NextButton.swift */; };
 		453B010B2B579F4E001C043C /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B010A2B579F4E001C043C /* ViewExt.swift */; };
+		453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B010C2B58B65A001C043C /* GetInfoView.swift */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		453B01022B5666BE001C043C /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
 		453B01082B579A2A001C043C /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		453B010A2B579F4E001C043C /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		453B010C2B58B65A001C043C /* GetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoView.swift; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
 				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
 				426B53502B578F7F00BDE077 /* LoginView.swift */,
+				453B010C2B58B65A001C043C /* GetInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				426B53512B578F7F00BDE077 /* LoginView.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
+				453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
