@@ -37,6 +37,9 @@
 		755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641422B56107F00F15ACD /* ExampleViewModel.swift */; };
 		755641452B56108800F15ACD /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641442B56108800F15ACD /* ExampleModel.swift */; };
 		755641472B56116500F15ACD /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641462B56116500F15ACD /* ExampleComponent.swift */; };
+		75881FD52B5A322100850541 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD42B5A322100850541 /* Constant.swift */; };
+		75881FD72B5A34DD00850541 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75881FD62B5A34DD00850541 /* ApiContent.plist */; };
+		75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD82B5A3B1B00850541 /* BundleExt.swift */; };
 		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
 		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
@@ -79,6 +82,9 @@
 		755641422B56107F00F15ACD /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		755641442B56108800F15ACD /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		755641462B56116500F15ACD /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
+		75881FD42B5A322100850541 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		75881FD62B5A34DD00850541 /* ApiContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
+		75881FD82B5A3B1B00850541 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		75ECC41D2B579F9800C26726 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				453B00FC2B562B5B001C043C /* FontExt.swift */,
 				453B00FE2B562FC3001C043C /* ColorExt.swift */,
 				453B010A2B579F4E001C043C /* ViewExt.swift */,
+				75881FD82B5A3B1B00850541 /* BundleExt.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				75348F012B4B8C4C0037FB2C /* Info.plist */,
+				75881FD62B5A34DD00850541 /* ApiContent.plist */,
 				7509BB142B4B88A5005A62AD /* QVickApp.swift */,
 				7509BB252B4B8B17005A62AD /* Resources */,
 				7509BB242B4B8AFB005A62AD /* Sources */,
@@ -142,6 +150,7 @@
 		7509BB242B4B8AFB005A62AD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				75881FD32B5A321500850541 /* Utils */,
 				453B00FB2B562B44001C043C /* Extenstion */,
 				755641412B56101900F15ACD /* ViewModel */,
 				755641402B56101400F15ACD /* Model */,
@@ -225,6 +234,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		75881FD32B5A321500850541 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75881FD42B5A322100850541 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		75ECC4132B57981500C26726 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +319,7 @@
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
+				75881FD72B5A34DD00850541 /* ApiContent.plist in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +350,7 @@
 				426B53512B578F7F00BDE077 /* LoginView.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
+				75881FD52B5A322100850541 /* Constant.swift in Sources */,
 				453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
@@ -339,6 +358,7 @@
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
+				75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
 				75ECC41E2B579F9800C26726 /* LoginViewModel.swift in Sources */,
 				453B01112B58E12A001C043C /* MainView.swift in Sources */,
