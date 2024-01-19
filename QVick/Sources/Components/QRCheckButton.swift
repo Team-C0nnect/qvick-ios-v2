@@ -14,9 +14,6 @@ struct QRCheckButton: View {
     let view: () -> AnyView
     
     var body: some View {
-        
-        ZStack {
-            Color.blueGray
             
             Button(action: {
                 isPresented.toggle()
@@ -49,15 +46,19 @@ struct QRCheckButton: View {
             .tint(.black)
             .sheet(isPresented: $isPresented) {
                 view()
-                    .presentationDetents([.height(700)])
+                    .presentationDetents([.height(660)])
             }
-        }
-        .ignoresSafeArea()
+        
     }
 }
 
 #Preview {
-    QRCheckButton {
-        AnyView(EmptyView())
+    ZStack {
+        Color.blueGray
+        
+        QRCheckButton {
+            AnyView(EmptyView())
+        }
     }
+    .ignoresSafeArea()
 }

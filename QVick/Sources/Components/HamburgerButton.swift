@@ -14,9 +14,6 @@ struct HamburgerButton: View {
     let view: () -> AnyView
     
     var body: some View {
-        ZStack {
-            
-            Color.blueGray
             
             Button(action: {
                 print("Hello Bongsung!")
@@ -34,13 +31,19 @@ struct HamburgerButton: View {
                 }
                 .foregroundStyle(.white)
             })
-        }
-        .ignoresSafeArea()
+        
     }
 }
 
 #Preview {
-    HamburgerButton {
-        AnyView(EmptyView())
+    ZStack {
+        Color.blueGray
+        
+        HamburgerButton {
+            AnyView(EmptyView())
+        }
+        
     }
+    .ignoresSafeArea()
+    
 }
