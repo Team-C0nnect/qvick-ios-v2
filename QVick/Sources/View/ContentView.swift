@@ -12,13 +12,10 @@ struct ContentView: View {
     @StateObject var viewModel = PersonalDataViewModel()
     
     var body: some View {
-        
-        Button {
-            viewModel.getClickedSelection(0)
-            print(viewModel.personModel[0].isClicked)
-        } label: {
-            Text("\(viewModel.personModel[0].label)")
-        }
+        Text("w")
+            .onAppear {
+                print(Constant.url)
+            }
     }
 }
 
