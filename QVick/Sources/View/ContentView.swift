@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = PersonalDataViewModel()
+    @State var isOn: Bool = false
     
     var body: some View {
-        Text("w")
-            .onAppear {
-                print(Constant.url)
-            }
+        VStack {
+            ToggleButton(isOn: $isOn)
+                
+        }
     }
 }
 
