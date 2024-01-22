@@ -11,7 +11,7 @@ import SwiftUI
 struct QVickApp: App {
     var body: some Scene {
         WindowGroup {
-            PersonalDataView()
+            ContentView()
         }
     }
 }

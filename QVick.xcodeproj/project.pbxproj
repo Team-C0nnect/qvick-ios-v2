@@ -37,6 +37,7 @@
 		755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641422B56107F00F15ACD /* ExampleViewModel.swift */; };
 		755641452B56108800F15ACD /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641442B56108800F15ACD /* ExampleModel.swift */; };
 		755641472B56116500F15ACD /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641462B56116500F15ACD /* ExampleComponent.swift */; };
+		7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */; };
 		75881FD52B5A322100850541 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD42B5A322100850541 /* Constant.swift */; };
 		75881FD72B5A34DD00850541 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75881FD62B5A34DD00850541 /* ApiContent.plist */; };
 		75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD82B5A3B1B00850541 /* BundleExt.swift */; };
@@ -82,6 +83,7 @@
 		755641422B56107F00F15ACD /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		755641442B56108800F15ACD /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		755641462B56116500F15ACD /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
+		7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		75881FD42B5A322100850541 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		75881FD62B5A34DD00850541 /* ApiContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		75881FD82B5A3B1B00850541 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				75F789842B58C019004A80BD /* LeaveOutList.swift */,
 				426B53562B58B6ED00BDE077 /* QRCheckButton.swift */,
 				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
+				7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				75881FD52B5A322100850541 /* Constant.swift in Sources */,
 				453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */,
+				7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */,
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
