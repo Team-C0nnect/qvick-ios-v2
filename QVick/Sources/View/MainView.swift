@@ -51,7 +51,7 @@ struct MainView: View {
                 .padding(.horizontal, 30)
                 
                 QRCheckButton(view: {
-                    AnyView(EmptyView())
+                    AnyView(QRCameraView())
                 })
             }
             
