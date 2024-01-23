@@ -13,6 +13,13 @@
 		426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53562B58B6ED00BDE077 /* QRCheckButton.swift */; };
 		426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53582B58C41400BDE077 /* HamburgerButton.swift */; };
 		426B535D2B5E9D8300BDE077 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535C2B5E9D8300BDE077 /* SettingsView.swift */; };
+		426B535F2B5F880000BDE077 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535E2B5F880000BDE077 /* ApplicationView.swift */; };
+		426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53602B5F8AAF00BDE077 /* SleepOverView.swift */; };
+		426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53622B5F8AB700BDE077 /* LeaveOutView.swift */; };
+		426B53652B5F8B3300BDE077 /* ApplicationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53642B5F8B3300BDE077 /* ApplicationButton.swift */; };
+		426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53662B5F8D2400BDE077 /* DatePickerCell.swift */; };
+		426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53682B5FAC5C00BDE077 /* TimeCell.swift */; };
+		426B536B2B5FACDA00BDE077 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B536A2B5FACDA00BDE077 /* ReasonCell.swift */; };
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
@@ -62,6 +69,13 @@
 		426B53562B58B6ED00BDE077 /* QRCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCheckButton.swift; sourceTree = "<group>"; };
 		426B53582B58C41400BDE077 /* HamburgerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		426B535C2B5E9D8300BDE077 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		426B535E2B5F880000BDE077 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+		426B53602B5F8AAF00BDE077 /* SleepOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepOverView.swift; sourceTree = "<group>"; };
+		426B53622B5F8AB700BDE077 /* LeaveOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutView.swift; sourceTree = "<group>"; };
+		426B53642B5F8B3300BDE077 /* ApplicationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationButton.swift; sourceTree = "<group>"; };
+		426B53662B5F8D2400BDE077 /* DatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		426B53682B5FAC5C00BDE077 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		426B536A2B5FACDA00BDE077 /* ReasonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonCell.swift; sourceTree = "<group>"; };
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
@@ -204,6 +218,10 @@
 				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 				7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */,
 				453B01732B5E24BA001C043C /* ProfileCell.swift */,
+				426B53642B5F8B3300BDE077 /* ApplicationButton.swift */,
+				426B53662B5F8D2400BDE077 /* DatePickerCell.swift */,
+				426B53682B5FAC5C00BDE077 /* TimeCell.swift */,
+				426B536A2B5FACDA00BDE077 /* ReasonCell.swift */,
 				453B01772B5F71D2001C043C /* GetInfoTextField.swift */,
 			);
 			path = Components;
@@ -220,6 +238,9 @@
 				453B01102B58E12A001C043C /* MainView.swift */,
 				426B535C2B5E9D8300BDE077 /* SettingsView.swift */,
 				453B01712B5E222E001C043C /* ProfileView.swift */,
+				426B535E2B5F880000BDE077 /* ApplicationView.swift */,
+				426B53602B5F8AAF00BDE077 /* SleepOverView.swift */,
+				426B53622B5F8AB700BDE077 /* LeaveOutView.swift */,
 				453B01752B5F6F9A001C043C /* PersonalInfoView.swift */,
 			);
 			path = View;
@@ -350,6 +371,7 @@
 				75ECC4172B5798EC00C26726 /* WebView.swift in Sources */,
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
+				426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
@@ -359,11 +381,14 @@
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
 				453B01722B5E222E001C043C /* ProfileView.swift in Sources */,
+				426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				453B010B2B579F4E001C043C /* ViewExt.swift in Sources */,
 				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
+				426B536B2B5FACDA00BDE077 /* ReasonCell.swift in Sources */,
 				426B53512B578F7F00BDE077 /* LoginView.swift in Sources */,
+				426B53652B5F8B3300BDE077 /* ApplicationButton.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				75881FD52B5A322100850541 /* Constant.swift in Sources */,
@@ -372,8 +397,10 @@
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
+				426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
+				426B535F2B5F880000BDE077 /* ApplicationView.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
@@ -381,6 +408,7 @@
 				453B01112B58E12A001C043C /* MainView.swift in Sources */,
 				453B01742B5E24BA001C043C /* ProfileCell.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
+				426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */,
 				453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */,
 				453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
