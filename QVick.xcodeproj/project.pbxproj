@@ -29,6 +29,7 @@
 		453B01722B5E222E001C043C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01712B5E222E001C043C /* ProfileView.swift */; };
 		453B01742B5E24BA001C043C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01732B5E24BA001C043C /* ProfileCell.swift */; };
 		453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01752B5F6F9A001C043C /* PersonalInfoView.swift */; };
+		453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01772B5F71D2001C043C /* GetInfoTextField.swift */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		453B01712B5E222E001C043C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		453B01732B5E24BA001C043C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		453B01752B5F6F9A001C043C /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		453B01772B5F71D2001C043C /* GetInfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoTextField.swift; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 				7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */,
 				453B01732B5E24BA001C043C /* ProfileCell.swift */,
+				453B01772B5F71D2001C043C /* GetInfoTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				453B01112B58E12A001C043C /* MainView.swift in Sources */,
 				453B01742B5E24BA001C043C /* ProfileCell.swift in Sources */,
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
+				453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */,
 				453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);

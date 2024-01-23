@@ -9,10 +9,11 @@ import SwiftUI
 
 struct GetInfoView: View {
     
-    @State var name: String = ""
+    @State var studentNumber: String = ""
+    @State var roomNumber: String = ""
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack {
             
             VStack(spacing: 20) {
                 
@@ -23,7 +24,7 @@ struct GetInfoView: View {
                     
                     Spacer()
                     
-                    Text("이용약관")
+                    Text("프로필")
                         .font(.judson(.bold, 24))
                         .foregroundStyle(Color.white)
                         .padding(.trailing, 20)
@@ -33,58 +34,71 @@ struct GetInfoView: View {
                 .padding(.horizontal, 20)
                 
                 Rectangle()
-                    .frame(width: 360, height: 1)
+                    .frame(height: 1)
                     .foregroundStyle(Color.white)
                 
             }
             
-            HStack {
-                Image("QvickLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50)
+            VStack(spacing: 40) {
                 
-                Spacer()
-            }
-            .padding(.horizontal, 30)
-            
-            
-            HStack {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("학번")
-                        .font(.judson(.bold, 24))
-                        .foregroundStyle(Color.white)
+                HStack {
+                    Image("QvickLogo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50)
                     
-                    Text("자신의 학번을 써주세요")
-                        .font(.judson(.bold, 15))
-                        .foregroundStyle(Color.white)
+                    Spacer()
                 }
                 
-                Spacer()
-            }
-            .padding(.horizontal, 30)
-            .padding(.vertical, 60)
-            
-            
-            
-            VStack {
                 
-                TextField("",
-                          text: $name,
-                          prompt: Text("예1118").foregroundStyle(Color.white)
-                )
-                .font(.judson(.bold, 20))
-                .foregroundStyle(Color.white)
+                VStack(spacing: 35) {
+                    
+                    HStack {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("학번")
+                                .font(.judson(.bold, 24))
+                                .foregroundStyle(Color.white)
+                            
+                            Text("자신의 학번을 작성해주세요")
+                                .font(.judson(.bold, 15))
+                                .foregroundStyle(Color.white)
+                        }
+                        
+                        Spacer()
+                    }
+                    
+                    GetInfoTextField(number: $studentNumber, prompt: "예 1118")
+                    
+                }
                 
-                Rectangle()
-                    .frame(width: 360, height: 1)
-                    .foregroundStyle(Color.white)
+                VStack(spacing: 35) {
+                    
+                    HStack {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("기숙사")
+                                .font(.judson(.bold, 24))
+                                .foregroundStyle(Color.white)
+                            
+                            Text("자신의 기숙사 동호수를 작성해주세요.")
+                                .font(.judson(.bold, 15))
+                                .foregroundStyle(Color.white)
+                        }
+                        
+                        Spacer()
+                    }
+                    
+                    GetInfoTextField(number: $roomNumber, prompt: "예 408호")
+                    
+                }
+                
             }
-            .padding(.horizontal, 30)
+            .padding(.vertical, 15)
+            .padding(.horizontal, 35)
             
             Spacer()
             
         }
+        .padding(.vertical, 10)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
         .nextButton(destination: ContentView())
