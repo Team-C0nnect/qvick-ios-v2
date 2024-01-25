@@ -20,7 +20,12 @@ struct LoginView: View {
             
             Spacer()
             
-            LoginButton(imageName: "DodamIcon", action: {print("신민호 고추")})
+            NavigationLink {
+                PersonalDataView()
+            } label: {
+                LoginButton(imageName: "DodamIcon", action: {print("신민호 고추")})
+                    .disabled(true)
+            }
             
             Spacer()
             
@@ -29,7 +34,7 @@ struct LoginView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blueGray)
-        
+        .navigationBarBackButtonHidden()
         
     }
 }
