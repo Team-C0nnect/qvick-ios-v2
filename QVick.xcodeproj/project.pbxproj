@@ -13,7 +13,7 @@
 		426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53562B58B6ED00BDE077 /* QRCheckButton.swift */; };
 		426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53582B58C41400BDE077 /* HamburgerButton.swift */; };
 		426B535D2B5E9D8300BDE077 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535C2B5E9D8300BDE077 /* SettingsView.swift */; };
-		426B535F2B5F880000BDE077 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535E2B5F880000BDE077 /* ApplicationView.swift */; };
+		426B535F2B5F880000BDE077 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535E2B5F880000BDE077 /* RequestView.swift */; };
 		426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53602B5F8AAF00BDE077 /* SleepOverView.swift */; };
 		426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53622B5F8AB700BDE077 /* LeaveOutView.swift */; };
 		426B53652B5F8B3300BDE077 /* ApplicationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53642B5F8B3300BDE077 /* ApplicationButton.swift */; };
@@ -72,7 +72,7 @@
 		426B53562B58B6ED00BDE077 /* QRCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCheckButton.swift; sourceTree = "<group>"; };
 		426B53582B58C41400BDE077 /* HamburgerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		426B535C2B5E9D8300BDE077 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		426B535E2B5F880000BDE077 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+		426B535E2B5F880000BDE077 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		426B53602B5F8AAF00BDE077 /* SleepOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepOverView.swift; sourceTree = "<group>"; };
 		426B53622B5F8AB700BDE077 /* LeaveOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutView.swift; sourceTree = "<group>"; };
 		426B53642B5F8B3300BDE077 /* ApplicationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationButton.swift; sourceTree = "<group>"; };
@@ -239,18 +239,15 @@
 			isa = PBXGroup;
 			children = (
 				7509BB162B4B88A5005A62AD /* ContentView.swift */,
-				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
-				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
-				426B53502B578F7F00BDE077 /* LoginView.swift */,
-				453B010C2B58B65A001C043C /* GetInfoView.swift */,
-				453B01102B58E12A001C043C /* MainView.swift */,
-				426B535C2B5E9D8300BDE077 /* SettingsView.swift */,
-				453B01712B5E222E001C043C /* ProfileView.swift */,
-				75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */,
-				426B535E2B5F880000BDE077 /* ApplicationView.swift */,
-				426B53602B5F8AAF00BDE077 /* SleepOverView.swift */,
-				426B53622B5F8AB700BDE077 /* LeaveOutView.swift */,
-				453B01752B5F6F9A001C043C /* PersonalInfoView.swift */,
+				75C030B82B6253F100FD5485 /* SchoolSelection */,
+				75C030B92B62540400FD5485 /* PersonalData */,
+				75C030BA2B62541000FD5485 /* Login */,
+				75C030BB2B62541B00FD5485 /* GetInfo */,
+				75C030BC2B62543800FD5485 /* Main */,
+				75C030BD2B62549900FD5485 /* Settings */,
+				75C030BE2B6254A500FD5485 /* Profile */,
+				75C030BF2B6254B200FD5485 /* QRCamera */,
+				75C030C02B6254BB00FD5485 /* Request */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,10 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				755641442B56108800F15ACD /* ExampleModel.swift */,
-				42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */,
-				453B01002B56662B001C043C /* PersonalDataModel.swift */,
-				426B53522B579B3100BDE077 /* GetInfoModel.swift */,
-				75F789862B58CECB004A80BD /* LeaveOutModel.swift */,
+				75C030C22B6254FE00FD5485 /* SchoolSelection */,
+				75C030C42B62555700FD5485 /* PersonalData */,
+				75C030C52B62556500FD5485 /* GetInfo */,
+				75C030C82B62558D00FD5485 /* LeaveOut */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,10 +268,10 @@
 			isa = PBXGroup;
 			children = (
 				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
-				42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */,
-				453B01022B5666BE001C043C /* PersonalDataViewModel.swift */,
-				75ECC41D2B579F9800C26726 /* LoginViewModel.swift */,
-				426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */,
+				75C030C12B6254F300FD5485 /* SchoolSelection */,
+				75C030C32B62555000FD5485 /* PersonalData */,
+				75C030C62B62556C00FD5485 /* GetInfo */,
+				75C030C72B62558700FD5485 /* Login */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -285,6 +282,145 @@
 				75881FD42B5A322100850541 /* Constant.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		75C030B82B6253F100FD5485 /* SchoolSelection */ = {
+			isa = PBXGroup;
+			children = (
+				7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */,
+			);
+			path = SchoolSelection;
+			sourceTree = "<group>";
+		};
+		75C030B92B62540400FD5485 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		75C030BA2B62541000FD5485 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				426B53502B578F7F00BDE077 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		75C030BB2B62541B00FD5485 /* GetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				453B010C2B58B65A001C043C /* GetInfoView.swift */,
+			);
+			path = GetInfo;
+			sourceTree = "<group>";
+		};
+		75C030BC2B62543800FD5485 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				453B01102B58E12A001C043C /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75C030BD2B62549900FD5485 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				453B01752B5F6F9A001C043C /* PersonalInfoView.swift */,
+				426B535C2B5E9D8300BDE077 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		75C030BE2B6254A500FD5485 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				453B01712B5E222E001C043C /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		75C030BF2B6254B200FD5485 /* QRCamera */ = {
+			isa = PBXGroup;
+			children = (
+				75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */,
+			);
+			path = QRCamera;
+			sourceTree = "<group>";
+		};
+		75C030C02B6254BB00FD5485 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				426B53602B5F8AAF00BDE077 /* SleepOverView.swift */,
+				426B53622B5F8AB700BDE077 /* LeaveOutView.swift */,
+				426B535E2B5F880000BDE077 /* RequestView.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		75C030C12B6254F300FD5485 /* SchoolSelection */ = {
+			isa = PBXGroup;
+			children = (
+				42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */,
+			);
+			path = SchoolSelection;
+			sourceTree = "<group>";
+		};
+		75C030C22B6254FE00FD5485 /* SchoolSelection */ = {
+			isa = PBXGroup;
+			children = (
+				42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */,
+			);
+			path = SchoolSelection;
+			sourceTree = "<group>";
+		};
+		75C030C32B62555000FD5485 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				453B01022B5666BE001C043C /* PersonalDataViewModel.swift */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		75C030C42B62555700FD5485 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				453B01002B56662B001C043C /* PersonalDataModel.swift */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		75C030C52B62556500FD5485 /* GetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				426B53522B579B3100BDE077 /* GetInfoModel.swift */,
+			);
+			path = GetInfo;
+			sourceTree = "<group>";
+		};
+		75C030C62B62556C00FD5485 /* GetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */,
+			);
+			path = GetInfo;
+			sourceTree = "<group>";
+		};
+		75C030C72B62558700FD5485 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				75ECC41D2B579F9800C26726 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		75C030C82B62558D00FD5485 /* LeaveOut */ = {
+			isa = PBXGroup;
+			children = (
+				75F789862B58CECB004A80BD /* LeaveOutModel.swift */,
+			);
+			path = LeaveOut;
 			sourceTree = "<group>";
 		};
 		75ECC4132B57981500C26726 /* Recovered References */ = {
@@ -412,7 +548,7 @@
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */,
-				426B535F2B5F880000BDE077 /* ApplicationView.swift in Sources */,
+				426B535F2B5F880000BDE077 /* RequestView.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
 				75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */,
 				7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */,
