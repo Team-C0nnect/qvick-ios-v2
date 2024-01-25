@@ -8,30 +8,27 @@
 import SwiftUI
 
 struct HamburgerButton: View {
-    
     @State var isPresented: Bool = false
     
     let view: () -> AnyView
     
     var body: some View {
             
-            Button(action: {
-                print("Hello Bongsung!")
-            }, label: {
-                VStack(spacing: 5) {
+        NavigationLink(destination: SettingsView(), label: {
+            VStack(spacing: 5) {
                     
-                    Rectangle()
-                        .frame(width: 33, height: 4.5)
+                Rectangle()
+                    .frame(width: 33, height: 4.5)
                     
-                    Rectangle()
-                        .frame(width: 33, height: 4.5)
-                    
-                    Rectangle()
-                        .frame(width: 33, height: 4.5)
-                }
-                .foregroundStyle(.white)
-            })
-        
+                Rectangle()
+                    .frame(width: 33, height: 4.5)
+            
+                Rectangle()
+                    .frame(width: 33, height: 4.5)
+            }
+            .foregroundStyle(.white)
+        })
+        .navigationBarBackButtonHidden()
     }
 }
 
