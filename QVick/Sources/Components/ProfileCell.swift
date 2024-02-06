@@ -25,7 +25,7 @@ struct ProfileCell: View {
                 
                 Spacer()
                 
-                if let a = attendance {
+                if attendance != nil {
                     Text("\(name)")
                         .font(.judson(.bold, 20))
                         .foregroundStyle(attendance! ? Color.baseGreen : Color.deepOrange)
