@@ -20,6 +20,7 @@
 		426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53662B5F8D2400BDE077 /* DatePickerCell.swift */; };
 		426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53682B5FAC5C00BDE077 /* TimeCell.swift */; };
 		426B536B2B5FACDA00BDE077 /* ReasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B536A2B5FACDA00BDE077 /* ReasonCell.swift */; };
+		426B53772B721F7500BDE077 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 426B53762B721F7500BDE077 /* ApiContent.plist */; };
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
@@ -55,7 +56,6 @@
 		75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */; };
 		75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */; };
 		75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */; };
-		75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CCB1022B71CF21008A030E /* ApiContent.plist */; };
 		75CCB1062B71E797008A030E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CCB1052B71E797008A030E /* LoginModel.swift */; };
 		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
@@ -81,6 +81,7 @@
 		426B53662B5F8D2400BDE077 /* DatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
 		426B53682B5FAC5C00BDE077 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		426B536A2B5FACDA00BDE077 /* ReasonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonCell.swift; sourceTree = "<group>"; };
+		426B53762B721F7500BDE077 /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraController.swift; sourceTree = "<group>"; };
 		75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraRepresentable.swift; sourceTree = "<group>"; };
 		75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraView.swift; sourceTree = "<group>"; };
-		75CCB1022B71CF21008A030E /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiContent.plist; path = ../../../../Downloads/ApiContent.plist; sourceTree = "<group>"; };
 		75CCB1052B71E797008A030E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				75348F012B4B8C4C0037FB2C /* Info.plist */,
-				75CCB1022B71CF21008A030E /* ApiContent.plist */,
+				426B53762B721F7500BDE077 /* ApiContent.plist */,
 				7509BB142B4B88A5005A62AD /* QVickApp.swift */,
 				7509BB252B4B8B17005A62AD /* Resources */,
 				7509BB242B4B8AFB005A62AD /* Sources */,
@@ -514,8 +514,8 @@
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
-				75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
+				426B53772B721F7500BDE077 /* ApiContent.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
