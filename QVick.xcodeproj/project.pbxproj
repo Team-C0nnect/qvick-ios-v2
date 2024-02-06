@@ -55,6 +55,8 @@
 		75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */; };
 		75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */; };
 		75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */; };
+		75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CCB1022B71CF21008A030E /* ApiContent.plist */; };
+		75CCB1062B71E797008A030E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CCB1052B71E797008A030E /* LoginModel.swift */; };
 		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
 		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
@@ -115,6 +117,8 @@
 		75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraController.swift; sourceTree = "<group>"; };
 		75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraRepresentable.swift; sourceTree = "<group>"; };
 		75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraView.swift; sourceTree = "<group>"; };
+		75CCB1022B71CF21008A030E /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiContent.plist; path = ../../../../Downloads/ApiContent.plist; sourceTree = "<group>"; };
+		75CCB1052B71E797008A030E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		75ECC41D2B579F9800C26726 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				75348F012B4B8C4C0037FB2C /* Info.plist */,
+				75CCB1022B71CF21008A030E /* ApiContent.plist */,
 				7509BB142B4B88A5005A62AD /* QVickApp.swift */,
 				7509BB252B4B8B17005A62AD /* Resources */,
 				7509BB242B4B8AFB005A62AD /* Sources */,
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				755641442B56108800F15ACD /* ExampleModel.swift */,
+				75CCB1042B71E77B008A030E /* Login */,
 				75C030C22B6254FE00FD5485 /* SchoolSelection */,
 				75C030C42B62555700FD5485 /* PersonalData */,
 				75C030C52B62556500FD5485 /* GetInfo */,
@@ -423,6 +429,14 @@
 			path = LeaveOut;
 			sourceTree = "<group>";
 		};
+		75CCB1042B71E77B008A030E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				75CCB1052B71E797008A030E /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		75ECC4132B57981500C26726 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +514,7 @@
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
+				75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +561,7 @@
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
 				426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
+				75CCB1062B71E797008A030E /* LoginModel.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */,
 				426B535F2B5F880000BDE077 /* RequestView.swift in Sources */,
@@ -697,7 +713,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QVick/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라의 사용을 허용해야 합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -707,7 +723,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.minho.QVick;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.QVick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -727,7 +743,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QVick/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라의 사용을 허용해야 합니다.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -737,7 +753,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.minho.QVick;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.QVick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

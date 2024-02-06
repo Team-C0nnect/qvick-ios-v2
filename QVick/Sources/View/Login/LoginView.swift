@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @ObservedObject var loginViewModel = LoginViewModel()
+    
     var body: some View {
         
         VStack {
@@ -20,12 +23,10 @@ struct LoginView: View {
             
             Spacer()
             
-            NavigationLink {
-                PersonalDataView()
-            } label: {
-                LoginButton(imageName: "DodamIcon", action: {print("신민호 고추")})
-                    .disabled(true)
+            LoginButton(imageName: "GoogleIcon") {
+                loginViewModel.googleSignIn()
             }
+            
             
             Spacer()
             
