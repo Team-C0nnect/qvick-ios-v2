@@ -37,6 +37,7 @@
 		453B01742B5E24BA001C043C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01732B5E24BA001C043C /* ProfileCell.swift */; };
 		453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01752B5F6F9A001C043C /* PersonalInfoView.swift */; };
 		453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01772B5F71D2001C043C /* GetInfoTextField.swift */; };
+		453B02022B720A90001C043C /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 453B02012B720A90001C043C /* ApiContent.plist */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -55,7 +56,6 @@
 		75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */; };
 		75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */; };
 		75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */; };
-		75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75CCB1022B71CF21008A030E /* ApiContent.plist */; };
 		75CCB1062B71E797008A030E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CCB1052B71E797008A030E /* LoginModel.swift */; };
 		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
@@ -98,6 +98,7 @@
 		453B01732B5E24BA001C043C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		453B01752B5F6F9A001C043C /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		453B01772B5F71D2001C043C /* GetInfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoTextField.swift; sourceTree = "<group>"; };
+		453B02012B720A90001C043C /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraController.swift; sourceTree = "<group>"; };
 		75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraRepresentable.swift; sourceTree = "<group>"; };
 		75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraView.swift; sourceTree = "<group>"; };
-		75CCB1022B71CF21008A030E /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiContent.plist; path = ../../../../Downloads/ApiContent.plist; sourceTree = "<group>"; };
 		75CCB1052B71E797008A030E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				75348F012B4B8C4C0037FB2C /* Info.plist */,
-				75CCB1022B71CF21008A030E /* ApiContent.plist */,
+				453B02012B720A90001C043C /* ApiContent.plist */,
 				7509BB142B4B88A5005A62AD /* QVickApp.swift */,
 				7509BB252B4B8B17005A62AD /* Resources */,
 				7509BB242B4B8AFB005A62AD /* Sources */,
@@ -514,8 +514,8 @@
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
-				75CCB1032B71CF21008A030E /* ApiContent.plist in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
+				453B02022B720A90001C043C /* ApiContent.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

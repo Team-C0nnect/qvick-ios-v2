@@ -11,10 +11,12 @@ struct NextButton: View {
     
     let content: () -> AnyView
     let destination: () -> AnyView
+    let action: () -> Void
     
-    init(content: @escaping () -> AnyView, destination: @escaping () -> AnyView) {
+    init(content: @escaping () -> AnyView, destination: @escaping () -> AnyView, action: @escaping () -> Void) {
         self.content = content
         self.destination = destination
+        self.action = action
     }
     
     var body: some View {
@@ -27,6 +29,9 @@ struct NextButton: View {
             NavigationLink {
                 
                 destination()
+                    .onAppear {
+                        action()
+                    }
                 
             } label: {
                 
@@ -64,7 +69,7 @@ struct NextButton: View {
                 
             }
             .nextButton(destination: SchoolSelectionView())
-               
+
         }
     }
 }
