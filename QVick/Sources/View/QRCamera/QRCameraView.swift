@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct QRCameraView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var loginViewModel = LoginViewModel()
     @State var inputImage: UIImage?
     @State var value: String = ""
     
@@ -17,13 +20,30 @@ struct QRCameraView: View {
         QRCameraRepresentable(image: $inputImage, value: $value)
             .onReceive(valueFromController) { (output) in
                 value = output.object as? String ?? ""
+                
+                if value != "" {
+                    let header: HTTPHeaders = [
+                        .authorization(bearerToken: loginViewModel.tokenData.accessToken ?? " ")
+                    ]
+                    
+                    AF.request(
+                        "\(Constant.url)/attendance",
+                        method: .post,
+                        parameters: ["code" : value],
+                        encoding: JSONEncoding(),
+                        headers: header
+                    )
+                    .validate()
+                }
             }
             .overlay {
                 VStack(spacing: 40) {
                     HStack {
                         Spacer()
                         
-                        Button {} label: {
+                        Button {
+                            self.presentationMode.wrappedValue.dismiss()
+                        } label: {
                             Image(systemName: "xmark")
                                 .font(.judson(.bold, 20))
                                 .foregroundStyle(Color.black)
@@ -45,4 +65,3 @@ struct QRCameraView: View {
             }
     }
 }
-
