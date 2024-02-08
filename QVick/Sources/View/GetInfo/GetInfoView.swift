@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GetInfoView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @State var studentNumber: String = ""
     @State var roomNumber: String = ""
     
@@ -21,9 +23,18 @@ struct GetInfoView: View {
                 VStack(spacing: 20) {
                     
                     HStack(spacing: 0) {
-                        Image(systemName: "chevron.left")
-                            .font(.judson(.regular, 20))
-                            .foregroundStyle(Color.white)
+                        
+                        Button {
+                            
+                            self.presentationMode.wrappedValue.dismiss()
+                            
+                        } label: {
+                            
+                            Image(systemName: "chevron.left")
+                                .font(.judson(.regular, 20))
+                                .foregroundStyle(Color.white)
+                            
+                        }
                         
                         Spacer()
                         
@@ -104,10 +115,11 @@ struct GetInfoView: View {
             .padding(.vertical, 10)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
-            .nextButton(destination: ContentView()) {
+            .nextButton(destination: MainView()) {
                 getInfoViewModel.postStdId()
             }
         }
+        .navigationBarBackButtonHidden()
         
     }
 }

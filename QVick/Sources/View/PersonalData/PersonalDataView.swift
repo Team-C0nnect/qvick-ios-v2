@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PersonalDataView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+
     @StateObject var personalViewModel = PersonalDataViewModel()
     @State var isClick = false
     
@@ -18,9 +20,14 @@ struct PersonalDataView: View {
                 
                 VStack(spacing: 20) {
                     HStack(spacing: 0) {
-                        Image(systemName: "chevron.left")
-                            .font(.judson(.regular, 20))
-                            .foregroundStyle(Color.white)
+                        
+                        Button {
+                            self.presentationMode.wrappedValue.dismiss()
+                        } label: {
+                            Image(systemName: "chevron.left")
+                                .font(.judson(.regular, 20))
+                                .foregroundStyle(Color.white)
+                        }
                         
                         Spacer()
                         
@@ -104,9 +111,11 @@ struct PersonalDataView: View {
             .padding(.vertical, 30)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
-            .navigationBarBackButtonHidden()
-            .nextButton(destination: ProfileView())
+            .nextButton(destination: GetInfoView())
+            
         }
+        .navigationBarBackButtonHidden()
+        
     }
 }
 

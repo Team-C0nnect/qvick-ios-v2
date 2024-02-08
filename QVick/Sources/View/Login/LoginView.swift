@@ -12,31 +12,38 @@ struct LoginView: View {
     @ObservedObject var loginViewModel = LoginViewModel()
     
     var body: some View {
-        
-        VStack {
+        NavigationStack {
             
-            Image("QvickLogo")
-            
-            Text("로그인 방식을 선택해 주세요")
-                .font(.judson(.regular, 14))
-                .foregroundStyle(.white)
-            
-            Spacer()
-            
-            LoginButton(imageName: "GoogleIcon") {
-                loginViewModel.googleSignIn()
+            VStack {
+                
+                Image("QvickLogo")
+                
+                Text("로그인 방식을 선택해 주세요")
+                    .font(.judson(.regular, 14))
+                    .foregroundStyle(.white)
+                
+                Spacer()
+                
+                NavigationLink {
+                    PersonalDataView()
+                } label: {
+                    
+                    LoginButton(imageName: "GoogleIcon") {
+                        loginViewModel.googleSignIn()
+                    }
+                    .disabled(true)
+                    
+                }
+                
+                Spacer()
+                
+                SchoolAskButton()
+                
             }
-            
-            
-            Spacer()
-            
-            SchoolAskButton()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.blueGray)
             
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.blueGray)
-        .navigationBarBackButtonHidden()
-        
     }
 }
 

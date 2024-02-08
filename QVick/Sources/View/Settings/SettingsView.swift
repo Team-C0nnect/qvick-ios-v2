@@ -33,7 +33,9 @@ struct SettingsView: View {
                 }
                 .padding(.horizontal, 35)
                 
-                Button(action: {print("프로필")}, label: {
+                NavigationLink {
+                    ProfileView()
+                } label: {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 345, height: 105)
                         .foregroundStyle(.clear)
@@ -56,7 +58,7 @@ struct SettingsView: View {
                             .padding(.horizontal, 15)
                         }
                         .padding(.vertical, 30)
-                })
+                }
                 
                 HStack {
                     Text("알림")
@@ -70,13 +72,13 @@ struct SettingsView: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Button(action: {
-                        print("외박신청 클릭!")
-                    }, label: {
+                    NavigationLink {
+                        ApplicationView()
+                    } label: {
                         Text("외박신청")
                             .font(.judson(.bold, 20))
                             .foregroundStyle(.white)
-                    })
+                    }
                     
                     Spacer()
                 }
@@ -84,7 +86,9 @@ struct SettingsView: View {
                 .padding(.vertical, 90)
                 
                 HStack {
-                    Button(action: {print("개인정보 약관")}, label: {
+                    NavigationLink {
+                        PersonalInfoView()
+                    } label: {
                         VStack(spacing: 2) {
                             Text("개인정보 약관")
                                 .font(.judson(.bold, 20))
@@ -94,7 +98,7 @@ struct SettingsView: View {
                                 .frame(width: 110, height: 1)
                                 .foregroundStyle(.white)
                         }
-                    })
+                    }
                     
                     Spacer()
                 }

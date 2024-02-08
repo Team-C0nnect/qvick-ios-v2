@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct PersonalInfoView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             
             VStack(spacing: 20) {
                 HStack {
-                    Image(systemName: "chevron.left")
-                        .font(.judson(.regular, 20))
-                        .foregroundStyle(Color.white)
+                    
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.judson(.regular, 20))
+                            .foregroundStyle(Color.white)
+                    }
                     
                     Spacer()
                     
@@ -52,6 +60,7 @@ struct PersonalInfoView: View {
         .padding(.vertical, 30)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
+        .navigationBarBackButtonHidden()
         
     }
 }

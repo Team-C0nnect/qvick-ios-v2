@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ApplicationView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     @State var selected = 1
     
     var body: some View {
@@ -20,7 +23,7 @@ struct ApplicationView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("Get out!")
+                    self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image(systemName: "xmark")
                         .resizable()
@@ -60,6 +63,7 @@ struct ApplicationView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blueGray)
+        .navigationBarBackButtonHidden()
     }
 }
 

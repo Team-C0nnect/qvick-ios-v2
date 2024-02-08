@@ -25,7 +25,7 @@ struct MainView: View {
                     Spacer()
                     
                     HamburgerButton(view: {
-                        AnyView(EmptyView())
+                        AnyView(ProfileView())
                     })
                     
                 }
@@ -81,6 +81,7 @@ struct MainView: View {
             .background(Color.blueGray)
             
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

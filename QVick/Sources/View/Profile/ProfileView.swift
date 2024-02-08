@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @State var fixState: Bool = false
     
     var body: some View {
@@ -17,9 +19,17 @@ struct ProfileView: View {
                 
                 HStack {
                     
-                    Image(systemName: "chevron.left")
-                        .font(.judson(.regular, 20))
-                        .foregroundStyle(Color.white)
+                    Button {
+                        
+                        self.presentationMode.wrappedValue.dismiss()
+                        
+                    } label: {
+                        
+                        Image(systemName: "chevron.left")
+                            .font(.judson(.regular, 20))
+                            .foregroundStyle(Color.white)
+                        
+                    }
                     
                     Spacer()
                     
@@ -68,8 +78,10 @@ struct ProfileView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
-            .navigationBarBackButtonHidden()
+            
         }
+        .navigationBarBackButtonHidden()
+        
     }
 }
 
