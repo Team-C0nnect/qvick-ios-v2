@@ -15,6 +15,11 @@
 	</array>
 	<key>GIDClientID</key>
 	<string>93255668456-b97o6rrfa4uui1sqrtdia0hg2pbsir0l.apps.googleusercontent.com</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Judson-Bold.ttf</string>
