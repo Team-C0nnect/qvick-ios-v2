@@ -23,7 +23,7 @@ struct QRCameraView: View {
                 
                 if value != "" {
                     let header: HTTPHeaders = [
-                        .authorization(bearerToken: loginViewModel.tokenData.accessToken ?? " ")
+                        .authorization(bearerToken: LoginViewModel.tokenData.accessToken ?? " ")
                     ]
                     
                     AF.request(

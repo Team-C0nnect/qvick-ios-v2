@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @ObservedObject var loginViewModel = LoginViewModel()
     
+    
     var body: some View {
         NavigationStack {
             
@@ -24,16 +25,11 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                NavigationLink {
-                    PersonalDataView()
-                } label: {
-                    
-                    LoginButton(imageName: "GoogleIcon") {
-                        loginViewModel.googleSignIn()
-                    }
-                    .disabled(true)
-                    
+                LoginButton(imageName: "GoogleIcon") {
+                    loginViewModel.googleSignIn()
                 }
+                
+                
                 
                 Spacer()
                 

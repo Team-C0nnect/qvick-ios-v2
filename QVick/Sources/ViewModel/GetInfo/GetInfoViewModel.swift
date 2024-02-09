@@ -11,7 +11,7 @@ import Alamofire
 class GetInfoViewModel: ObservableObject {
     
     @Published var info = GetInfoModel(schoolNumber: "1116")
-    @Published var tokenData = LoginViewModel()
+    
     
     var content: String {
         let content = info.schoolNumber
@@ -23,7 +23,7 @@ class GetInfoViewModel: ObservableObject {
                    method: .post,
                    parameters: ["stdId" : info.schoolNumber] as Dictionary,
                    encoding: JSONEncoding(),
-                   headers: ["Authorization": "Bearer \(String(describing: tokenData.tokenData.accessToken))"]
+                   headers: ["Authorization": "Bearer \(LoginViewModel.tokenData.accessToken ?? "")"]
         )
         .validate()
         .response { response in
