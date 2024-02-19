@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420F4F8F2B73783A00C87001 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420F4F8E2B73783A00C87001 /* ApiContent.plist */; };
 		426B53512B578F7F00BDE077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53502B578F7F00BDE077 /* LoginView.swift */; };
 		426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53522B579B3100BDE077 /* GetInfoModel.swift */; };
 		426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */; };
@@ -44,6 +43,7 @@
 		7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */; };
 		7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7513C51C2B56764200A198E3 /* PersonalDataView.swift */; };
 		7513C5202B57753D00A198E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7513C51F2B57753D00A198E3 /* Alamofire */; };
+		7519FD2D2B83472A00443062 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7519FD2C2B83472A00443062 /* ApiContent.plist */; };
 		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
 		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
 		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
@@ -68,7 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		420F4F8E2B73783A00C87001 /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ApiContent.plist; path = ../../../../Downloads/ApiContent.plist; sourceTree = "<group>"; };
 		426B53502B578F7F00BDE077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		426B53522B579B3100BDE077 /* GetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoModel.swift; sourceTree = "<group>"; };
 		426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoViewModel.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		7509BB182B4B88A7005A62AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7513C51A2B56534200A198E3 /* SchoolSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionView.swift; sourceTree = "<group>"; };
 		7513C51C2B56764200A198E3 /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
+		7519FD2C2B83472A00443062 /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		75348F012B4B8C4C0037FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
 		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				75348F012B4B8C4C0037FB2C /* Info.plist */,
-				420F4F8E2B73783A00C87001 /* ApiContent.plist */,
+				7519FD2C2B83472A00443062 /* ApiContent.plist */,
 				7509BB142B4B88A5005A62AD /* QVickApp.swift */,
 				7509BB252B4B8B17005A62AD /* Resources */,
 				7509BB242B4B8AFB005A62AD /* Sources */,
@@ -514,8 +514,8 @@
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
-				420F4F8F2B73783A00C87001 /* ApiContent.plist in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
+				7519FD2D2B83472A00443062 /* ApiContent.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,17 +713,20 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QVick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "큐빅";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.QVick;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.Qvick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -743,17 +746,20 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QVick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "큐빅";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.QVick;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.Qvick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

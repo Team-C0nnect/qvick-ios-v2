@@ -17,7 +17,7 @@ struct GetInfoTextField: View {
         VStack {
             TextField("",
                       text: $number,
-                      prompt: Text("\(prompt)").foregroundStyle(Color.white)
+                      prompt: Text("\(prompt)").foregroundColor(Color.white)
             )
             .font(.judson(.bold, 20))
             .foregroundStyle(Color.white)
