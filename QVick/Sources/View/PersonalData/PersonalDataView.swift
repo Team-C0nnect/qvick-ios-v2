@@ -12,7 +12,6 @@ struct PersonalDataView: View {
     @Environment(\.presentationMode) var presentationMode
 
     @StateObject var personalViewModel = PersonalDataViewModel()
-    @State var isClick = false
     
     var body: some View {
         NavigationView {
@@ -69,7 +68,7 @@ struct PersonalDataView: View {
                             HStack(spacing: 18) {
                                 Button {
                                     withAnimation {
-                                        isClick.toggle()
+                                        personalViewModel.toggleTotalAccept()
                                     }
                                 } label: {
                                     ZStack {
@@ -78,7 +77,7 @@ struct PersonalDataView: View {
                                             .frame(width: 25, height: 25)
                                         
                                         Image(systemName: "checkmark")
-                                            .foregroundStyle(isClick ? .white : .clear)
+                                            .foregroundStyle(!personalViewModel.totalAccept ? .white : .clear)
                                             .fontWeight(.semibold)
                                     }
                                 }
@@ -96,7 +95,7 @@ struct PersonalDataView: View {
                 VStack(spacing: 30) {
                     
                     ForEach(0 ..< personalViewModel.personModel.count, id: \.self) { index in
-                        PersonalDataCell(label: "\(personalViewModel.personModel[index].label)", url: "/terms/privacy-policy", isClicked: isClick ? true : personalViewModel.personModel[index].isClicked) {
+                        PersonalDataCell(label: "\(personalViewModel.personModel[index].label)", url: "/terms/privacy-policy", isClicked: personalViewModel.personModel[index].isClicked) {
                             personalViewModel.getClickedSelection(index)
                         }
                     }
@@ -111,13 +110,16 @@ struct PersonalDataView: View {
             .padding(.vertical, 30)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
-            .nextButton(destination: GetInfoView())
-            
+            .nextButton(destination: GetInfoView(),
+                        disable: personalViewModel.checkBoolList())
         }
         .navigationBarBackButtonHidden()
         
     }
 }
+
+
+
 
 #Preview {
     PersonalDataView()

@@ -13,7 +13,7 @@ struct WebView: UIViewRepresentable {
     var url: String
     
     func makeUIView(context: Context) -> WKWebView {
-        guard let url = URL(string: "http://10.1.1.103:8080\(self.url)") else {
+        guard let url = URL(string: "\(Constant.url)\(self.url)") else {
             return WKWebView()
         }
         

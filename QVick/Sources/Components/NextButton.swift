@@ -12,11 +12,13 @@ struct NextButton: View {
     let content: () -> AnyView
     let destination: () -> AnyView
     let action: () -> Void
+    let disable: Bool
     
-    init(content: @escaping () -> AnyView, destination: @escaping () -> AnyView, action: @escaping () -> Void) {
+    init(content: @escaping () -> AnyView, destination: @escaping () -> AnyView, action: @escaping () -> Void, disable: Bool = false) {
         self.content = content
         self.destination = destination
         self.action = action
+        self.disable = disable
     }
     
     var body: some View {
@@ -45,9 +47,12 @@ struct NextButton: View {
                     }
                 
             }
+            .disabled(disable)
+            
             
         }
         .ignoresSafeArea(.all, edges: .bottom)
+        
         
     }
 }
