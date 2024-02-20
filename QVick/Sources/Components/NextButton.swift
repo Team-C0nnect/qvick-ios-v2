@@ -58,7 +58,7 @@ struct NextButton: View {
 }
 
 #Preview {
-    NavigationStack {
+    NavigationView {
         ZStack {
             
             Color.BaseGray

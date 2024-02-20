@@ -11,7 +11,7 @@ struct SchoolSelectionView: View {
     @StateObject var schoolSelcetion = SchoolSelectionViewModel()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 45) {
                 VStack(spacing: 12) {
                     Image("QvickLogo")
@@ -44,7 +44,7 @@ struct SchoolSelectionView: View {
                 ScrollView {
                     
                     NavigationLink {
-                        LoginView()
+                        SigninView()
                     } label: {
                         SchoolSelectionCell(schoolName: "대구소프트웨어마이스터고등학교", schoolAddress: "대구광역시 달성군 구지면 창리로11길 93")
                             .foregroundStyle(.black)

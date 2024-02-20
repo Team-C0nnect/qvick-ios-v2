@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  SigninView.swift
 //  QVick
 //
 //  Created by dgsw8th32 on 1/17/24.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct SigninView: View {
     
     @ObservedObject var loginViewModel = LoginViewModel()
     
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             
             VStack {
                 
@@ -36,13 +36,17 @@ struct LoginView: View {
                 SchoolAskButton()
                 
             }
+            .padding(.vertical, 15)
+            
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blueGray)
+            .navigationBarHidden(true)
             
         }
+        
     }
 }
 
 #Preview {
-    LoginView()
+    SigninView()
 }

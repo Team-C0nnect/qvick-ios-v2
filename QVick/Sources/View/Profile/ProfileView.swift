@@ -78,9 +78,11 @@ struct ProfileView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
+            .navigationBarHidden(true)
             
         }
         .navigationBarBackButtonHidden()
+        
         
     }
 }

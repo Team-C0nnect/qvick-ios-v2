@@ -37,8 +37,9 @@ struct PersonalDataCell: View {
                             Circle().stroke(.white, lineWidth: 1)
                             
                             Image(systemName: "checkmark")
+                                .font(.system(size: 12).weight(.semibold))
                                 .foregroundStyle(isClicked ? .white : .clear)
-                                .fontWeight(.semibold)
+                                
                         }
                     }
             })
@@ -63,9 +64,14 @@ struct PersonalDataCell: View {
             .padding(.trailing)
         }
         .sheet(isPresented: $isPresented) {
-            WebView(url: url)
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
+            if #available(iOS 16.0, *) {
+                WebView(url: url)
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+            }
+            else {
+                WebView(url: url)
+            }
         }
     }
 }

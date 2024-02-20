@@ -78,7 +78,7 @@ struct PersonalDataView: View {
                                         
                                         Image(systemName: "checkmark")
                                             .foregroundStyle(!personalViewModel.totalAccept ? .white : .clear)
-                                            .fontWeight(.semibold)
+                                            .font(.system(size: 12).weight(.semibold))
                                     }
                                 }
                                 
@@ -110,6 +110,7 @@ struct PersonalDataView: View {
             .padding(.vertical, 30)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
+            .navigationBarHidden(true)
             .nextButton(destination: GetInfoView(),
                         disable: personalViewModel.checkBoolList())
         }

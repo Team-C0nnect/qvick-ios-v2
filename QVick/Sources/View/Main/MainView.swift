@@ -79,9 +79,11 @@ struct MainView: View {
             .padding(.vertical, 30)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blueGray)
+            .navigationBarHidden(true)
             
         }
         .navigationBarBackButtonHidden()
+        .navigationBarHidden(true)
     }
 }
 

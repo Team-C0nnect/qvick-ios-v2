@@ -118,8 +118,11 @@ struct GetInfoView: View {
             .nextButton(destination: MainView()) {
                 getInfoViewModel.postStdId()
             }
+            .navigationBarHidden(true)
+            
         }
         .navigationBarBackButtonHidden()
+        .navigationBarHidden(true)
         
     }
 }
