@@ -82,7 +82,10 @@ struct GetInfoView: View {
                         }
                         
                         GetInfoTextField(number: $studentNumber, prompt: "예 1118")
-                        
+                            .onChange(of: studentNumber) { _ in
+                                getInfoViewModel.info = GetInfoModel(studentNumber: studentNumber, roomNumber: roomNumber)
+                            }
+                                                    
                     }
                     
                     VStack(spacing: 35) {
@@ -102,9 +105,11 @@ struct GetInfoView: View {
                         }
                         
                         GetInfoTextField(number: $roomNumber, prompt: "예 408호")
+                            .onChange(of: roomNumber) { _ in
+                                getInfoViewModel.info = GetInfoModel(studentNumber: studentNumber, roomNumber: roomNumber)
+                            }
                         
                     }
-                    
                 }
                 .padding(.vertical, 15)
                 .padding(.horizontal, 35)
@@ -116,7 +121,10 @@ struct GetInfoView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blackGray)
             .nextButton(destination: MainView()) {
-                getInfoViewModel.postStdId()
+                Task {
+                    await getInfoViewModel.postStdId()
+                    await getInfoViewModel.postRoomId()
+                }
             }
             .navigationBarHidden(true)
             
