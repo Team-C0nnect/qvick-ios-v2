@@ -9,6 +9,14 @@ import Foundation
 
 struct GetInfoModel {
     
-    var schoolNumber: String
+    var studentNumber: String
+    
+    var roomNumber: String
+    
+}
+
+struct ErrorModel: Decodable {
+    
+    var message: String? = nil
     
 }

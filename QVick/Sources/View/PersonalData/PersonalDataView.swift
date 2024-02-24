@@ -95,7 +95,7 @@ struct PersonalDataView: View {
                 VStack(spacing: 30) {
                     
                     ForEach(0 ..< personalViewModel.personModel.count, id: \.self) { index in
-                        PersonalDataCell(label: "\(personalViewModel.personModel[index].label)", url: "/terms/privacy-policy", isClicked: personalViewModel.personModel[index].isClicked) {
+                        PersonalDataCell(label: "\(personalViewModel.personModel[index].label)", url: personalViewModel.personModel[index].url, isClicked: personalViewModel.personModel[index].isClicked) {
                             personalViewModel.getClickedSelection(index)
                         }
                     }

@@ -11,8 +11,8 @@ import Alamofire
 class PersonalDataViewModel: ObservableObject {
     
     @Published var personModel: [PersonalDataModel] = [
-        PersonalDataModel(label: "서비스 이용약관 (필수)", url: ""),
-        PersonalDataModel(label: "개인정보 수집 / 이용 동의 (필수)", url: "")
+        PersonalDataModel(label: "서비스 이용약관 (필수)", url: "/terms/use-term"),
+        PersonalDataModel(label: "개인정보 처리 약관 (필수)", url: "/terms/privacy-policy")
     ]
     
     
