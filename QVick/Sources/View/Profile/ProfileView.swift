@@ -11,6 +11,8 @@ struct ProfileView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @StateObject var vm = ProfileViewModel()
+    
     @State var fixState: Bool = false
     
     var body: some View {
@@ -63,9 +65,9 @@ struct ProfileView: View {
                     
                     ProfileCell(title: "이름", name: "윤세욱")
                     
-                    ProfileCell(title: "학번", name: "1118")
+                    ProfileCell(title: "학번", name: "\(vm.userInfo.stdId)")
                     
-                    ProfileCell(title: "호수", name: "408")
+                    ProfileCell(title: "호수", name: "\(vm.userInfo.roomId)")
                     
                     ProfileCell(title: "출석여부", name: "출석", attendance: true)
                     
@@ -80,6 +82,9 @@ struct ProfileView: View {
             .background(Color.blackGray)
             .navigationBarHidden(true)
             
+        }
+        .onAppear {
+            vm.getUserInfo()
         }
         .navigationBarBackButtonHidden()
         

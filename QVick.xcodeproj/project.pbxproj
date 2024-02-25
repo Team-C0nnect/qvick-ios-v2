@@ -37,6 +37,10 @@
 		453B01742B5E24BA001C043C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01732B5E24BA001C043C /* ProfileCell.swift */; };
 		453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01752B5F6F9A001C043C /* PersonalInfoView.swift */; };
 		453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01772B5F71D2001C043C /* GetInfoTextField.swift */; };
+		45B391CF2B8B480800F784BB /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391CE2B8B480800F784BB /* UserDataModel.swift */; };
+		45B391D22B8B48B200F784BB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391D12B8B48B200F784BB /* ProfileViewModel.swift */; };
+		45B391D52B8B4EF400F784BB /* GetStdIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391D42B8B4EF400F784BB /* GetStdIdResponse.swift */; };
+		45B391D92B8B5C3400F784BB /* GetRoomIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391D82B8B5C3400F784BB /* GetRoomIdResponse.swift */; };
 		7509BB152B4B88A5005A62AD /* QVickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB142B4B88A5005A62AD /* QVickApp.swift */; };
 		7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7509BB162B4B88A5005A62AD /* ContentView.swift */; };
 		7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7509BB182B4B88A7005A62AD /* Assets.xcassets */; };
@@ -98,6 +102,10 @@
 		453B01732B5E24BA001C043C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		453B01752B5F6F9A001C043C /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		453B01772B5F71D2001C043C /* GetInfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoTextField.swift; sourceTree = "<group>"; };
+		45B391CE2B8B480800F784BB /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		45B391D12B8B48B200F784BB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		45B391D42B8B4EF400F784BB /* GetStdIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStdIdResponse.swift; sourceTree = "<group>"; };
+		45B391D82B8B5C3400F784BB /* GetRoomIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoomIdResponse.swift; sourceTree = "<group>"; };
 		7509BB112B4B88A5005A62AD /* QVick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QVick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7509BB142B4B88A5005A62AD /* QVickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QVickApp.swift; sourceTree = "<group>"; };
 		7509BB162B4B88A5005A62AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +158,31 @@
 				75881FD82B5A3B1B00850541 /* BundleExt.swift */,
 			);
 			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		45B391CD2B8B47CA00F784BB /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				45B391CE2B8B480800F784BB /* UserDataModel.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		45B391D02B8B488900F784BB /* ProfileViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45B391D12B8B48B200F784BB /* ProfileViewModel.swift */,
+			);
+			path = ProfileViewModel;
+			sourceTree = "<group>";
+		};
+		45B391D32B8B4EE700F784BB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				45B391D42B8B4EF400F784BB /* GetStdIdResponse.swift */,
+				45B391D82B8B5C3400F784BB /* GetRoomIdResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		7509BB082B4B88A5005A62AD = {
@@ -260,12 +293,14 @@
 		755641402B56101400F15ACD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45B391D32B8B4EE700F784BB /* Response */,
 				755641442B56108800F15ACD /* ExampleModel.swift */,
 				75CCB1042B71E77B008A030E /* Login */,
 				75C030C22B6254FE00FD5485 /* SchoolSelection */,
 				75C030C42B62555700FD5485 /* PersonalData */,
 				75C030C52B62556500FD5485 /* GetInfo */,
 				75C030C82B62558D00FD5485 /* LeaveOut */,
+				45B391CD2B8B47CA00F784BB /* UserData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +313,7 @@
 				75C030C32B62555000FD5485 /* PersonalData */,
 				75C030C62B62556C00FD5485 /* GetInfo */,
 				75C030C72B62558700FD5485 /* Login */,
+				45B391D02B8B488900F784BB /* ProfileViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -536,6 +572,7 @@
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
+				45B391D22B8B48B200F784BB /* ProfileViewModel.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
 				75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */,
 				453B01092B579A2A001C043C /* NextButton.swift in Sources */,
@@ -544,6 +581,7 @@
 				453B01722B5E222E001C043C /* ProfileView.swift in Sources */,
 				426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
+				45B391D92B8B5C3400F784BB /* GetRoomIdResponse.swift in Sources */,
 				75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				453B010B2B579F4E001C043C /* ViewExt.swift in Sources */,
@@ -559,6 +597,8 @@
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
 				426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */,
+				45B391CF2B8B480800F784BB /* UserDataModel.swift in Sources */,
+				45B391D52B8B4EF400F784BB /* GetStdIdResponse.swift in Sources */,
 				426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				75CCB1062B71E797008A030E /* LoginModel.swift in Sources */,
