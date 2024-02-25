@@ -10,6 +10,7 @@ import Foundation
 struct GetRoomIdResponse: Decodable {
     
     let id: Int
+    let userId: Int
     let roomId: String
     
 }
