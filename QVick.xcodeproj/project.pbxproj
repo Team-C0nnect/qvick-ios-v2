@@ -23,6 +23,10 @@
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
+		42D500012B8C545F005EE62B /* TestSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500002B8C545F005EE62B /* TestSignInView.swift */; };
+		42D500032B8C5594005EE62B /* TestSignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500022B8C5594005EE62B /* TestSignInTextField.swift */; };
+		42D500062B8C5B89005EE62B /* TestSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500052B8C5B89005EE62B /* TestSignInModel.swift */; };
+		42D500092B8C5BD3005EE62B /* TestSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */; };
 		453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */; };
 		453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F92B56278E001C043C /* SchoolAskButton.swift */; };
 		453B00FD2B562B5B001C043C /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00FC2B562B5B001C043C /* FontExt.swift */; };
@@ -84,6 +88,10 @@
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
+		42D500002B8C545F005EE62B /* TestSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInView.swift; sourceTree = "<group>"; };
+		42D500022B8C5594005EE62B /* TestSignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInTextField.swift; sourceTree = "<group>"; };
+		42D500052B8C5B89005EE62B /* TestSignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInModel.swift; sourceTree = "<group>"; };
+		42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInViewModel.swift; sourceTree = "<group>"; };
 		453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionCell.swift; sourceTree = "<group>"; };
 		453B00F92B56278E001C043C /* SchoolAskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAskButton.swift; sourceTree = "<group>"; };
 		453B00FC2B562B5B001C043C /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
@@ -141,6 +149,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42D500042B8C5B57005EE62B /* TestSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				42D500052B8C5B89005EE62B /* TestSignInModel.swift */,
+			);
+			path = TestSignIn;
+			sourceTree = "<group>";
+		};
+		42D500072B8C5BB2005EE62B /* TestSignInViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */,
+			);
+			path = TestSignInViewModel;
+			sourceTree = "<group>";
+		};
+		42D5FFE82B8B0C22005EE62B /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				42D500002B8C545F005EE62B /* TestSignInView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 		453B00FB2B562B44001C043C /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +268,7 @@
 				426B53682B5FAC5C00BDE077 /* TimeCell.swift */,
 				426B536A2B5FACDA00BDE077 /* ReasonCell.swift */,
 				453B01772B5F71D2001C043C /* GetInfoTextField.swift */,
+				42D500022B8C5594005EE62B /* TestSignInTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -247,6 +280,7 @@
 				75C030B82B6253F100FD5485 /* SchoolSelection */,
 				75C030B92B62540400FD5485 /* PersonalData */,
 				75C030BA2B62541000FD5485 /* SigninView */,
+				42D5FFE82B8B0C22005EE62B /* LoginView */,
 				75C030BB2B62541B00FD5485 /* GetInfo */,
 				75C030BC2B62543800FD5485 /* Main */,
 				75C030BD2B62549900FD5485 /* Settings */,
@@ -266,6 +300,7 @@
 				75C030C42B62555700FD5485 /* PersonalData */,
 				75C030C52B62556500FD5485 /* GetInfo */,
 				75C030C82B62558D00FD5485 /* LeaveOut */,
+				42D500042B8C5B57005EE62B /* TestSignIn */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +313,7 @@
 				75C030C32B62555000FD5485 /* PersonalData */,
 				75C030C62B62556C00FD5485 /* GetInfo */,
 				75C030C72B62558700FD5485 /* Login */,
+				42D500072B8C5BB2005EE62B /* TestSignInViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -534,6 +570,7 @@
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
 				426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
+				42D500092B8C5BD3005EE62B /* TestSignInViewModel.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
@@ -543,6 +580,7 @@
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
 				453B01722B5E222E001C043C /* ProfileView.swift in Sources */,
 				426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */,
+				42D500032B8C5594005EE62B /* TestSignInTextField.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
@@ -551,6 +589,7 @@
 				426B536B2B5FACDA00BDE077 /* ReasonCell.swift in Sources */,
 				426B53512B578F7F00BDE077 /* SigninView.swift in Sources */,
 				426B53652B5F8B3300BDE077 /* ApplicationButton.swift in Sources */,
+				42D500012B8C545F005EE62B /* TestSignInView.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
 				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				75881FD52B5A322100850541 /* Constant.swift in Sources */,
@@ -574,6 +613,7 @@
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 				426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */,
 				453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */,
+				42D500062B8C5B89005EE62B /* TestSignInModel.swift in Sources */,
 				453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);
