@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SigninView: View {
     
-    @ObservedObject var loginViewModel = LoginViewModel()
+    @ObservedObject var loginViewModel = SigninViewModel()
     
     
     var body: some View {

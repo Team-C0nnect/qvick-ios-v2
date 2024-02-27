@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct TestSignInView: View {
-    @ObservedObject var loginViewModel = LoginViewModel()
+    @ObservedObject var signinViewModel = SigninViewModel()
     @StateObject var testSignInViewModel = TestSignInViewModel()
-    @State var isMaintain: Bool
+    @State var isMaintain: Bool = false
     
     var body: some View {
         ZStack {
@@ -28,7 +28,8 @@ struct TestSignInView: View {
                     .padding(.bottom, 70)
                 
                 TestSignInTextField(name: "이메일", text: $testSignInViewModel.email, prompt: "예) minhogogo@gmail.com")
-                TestSignInTextField(name: "비밀번호", text: $testSignInViewModel.password, prompt: "")
+                
+                TestSignInTextField(name: "비밀번호", text: $testSignInViewModel.password, prompt: "", type: .secure)
                     .padding(.vertical, 10)
                 
                 HStack {
@@ -54,7 +55,7 @@ struct TestSignInView: View {
                 .padding(.horizontal, 45)
                 
                 Button(action: {
-                    
+                    testSignInViewModel.testSignIn()
                 }, label: {
                     Rectangle()
                         .frame(width: 310, height: 55)
@@ -95,8 +96,9 @@ struct TestSignInView: View {
                     .font(.judson(.bold, 15))
                 
                 LoginButton(imageName: "GoogleIcon") {
-                    loginViewModel.googleSignIn()
+                    signinViewModel.googleSignIn()
                 }
+                .scaleEffect(x: 0.5, y: 0.5)
                 .padding(.vertical, 5)
                 
                 Spacer()
@@ -111,5 +113,5 @@ struct TestSignInView: View {
 }
 
 #Preview {
-    TestSignInView(isMaintain: false)
+    TestSignInView()
 }

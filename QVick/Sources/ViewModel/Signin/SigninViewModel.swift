@@ -10,13 +10,14 @@ import GoogleSignIn
 import GoogleSignInSwift
 import Alamofire
 
-class LoginViewModel: ObservableObject {
+class SigninViewModel: ObservableObject {
     
     init() {
     }
     
-    static var tokenData = LoginModel()
+    static var tokenData = SigninModel()
     
+   
     
     func googleSignIn() {
         guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
@@ -35,11 +36,11 @@ class LoginViewModel: ObservableObject {
                                
                     )
                     .validate()
-                    .responseDecodable(of: LoginModel.self) { response in
+                    .responseDecodable(of: SigninModel.self) { response in
                         switch response.result {
                         case .success(let data):
-                            LoginViewModel.tokenData = data
-                            print(LoginViewModel.tokenData.accessToken)
+                            SigninViewModel.tokenData = data
+                            print(SigninViewModel.tokenData.accessToken)
                             viewController.present(nextVC, animated: false)
                             return
                         case .failure(_):
