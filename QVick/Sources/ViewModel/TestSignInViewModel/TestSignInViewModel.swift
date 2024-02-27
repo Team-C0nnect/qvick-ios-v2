@@ -4,9 +4,9 @@
 //
 //  Created by dgsw8th32 on 2/26/24.
 //
-
-import Foundation
+    
 import Alamofire
+import SwiftUI
 
 class TestSignInViewModel: ObservableObject {
     var email: String = "" {
@@ -20,25 +20,30 @@ class TestSignInViewModel: ObservableObject {
         }
     }
     
-    func signIn() async {
-        print("signIn")
+    func testSignIn() {
+        guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
         
-        AF.request("\(Constant.url)/auth/sign-in",
+        let nextVC = UIHostingController(rootView: PersonalDataView())
+        nextVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        
+        AF.request("\(Constant.url)/auth/sign-up",
                    method: .post,
-                   parameters: ["email" : self.email, "password" : self.password] as Dictionary,
+                   parameters: ["name":"신민호", "email":email, "password":password] as Dictionary,
                    encoding: JSONEncoding()
+                   
         )
         .validate()
-        .response { response in
-            
+        .responseDecodable(of: SigninModel.self) { response in
             switch response.result {
-                
-            case .success(let result):
-                print(result)
+            case .success(let data):
+                SigninViewModel.tokenData = data
+                print(SigninViewModel.tokenData.accessToken)
+                if !((SigninViewModel.tokenData.accessToken) == nil) {
+                    viewController.present(nextVC, animated: false)
+                }
+                return
+            case .failure(_):
                 break
-            case .failure(let error):
-                print(error)
-                
             }
         }
         

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginModel: Codable {
+struct SigninModel: Codable {
     var accessToken: String?
     var refreshToken: String?
 }
