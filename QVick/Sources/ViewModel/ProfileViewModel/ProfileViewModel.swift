@@ -12,6 +12,7 @@ class ProfileViewModel: ObservableObject {
     
     @Published var userInfo: UserDataModel = UserDataModel(stdId: "", roomId: "")
     
+    
     func getUserInfo() {
         
         self.getStdId()
@@ -24,7 +25,7 @@ class ProfileViewModel: ObservableObject {
         AF.request("\(Constant.url)/student",
                    method: .get,
                    encoding: JSONEncoding(),
-                   headers: ["Authorization": "Bearer \(LoginViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
         )
         .responseDecodable(of: GetStdIdResponse.self) { response in
             
@@ -47,7 +48,7 @@ class ProfileViewModel: ObservableObject {
         AF.request("\(Constant.url)/room",
                    method: .get,
                    encoding: JSONEncoding(),
-                   headers: ["Authorization": "Bearer \(LoginViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
         )
         .responseDecodable(of: GetRoomIdResponse.self) { response in
             
