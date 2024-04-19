@@ -11,49 +11,48 @@ import GoogleSignInSwift
 import Alamofire
 
 class SigninViewModel: ObservableObject {
-    
-    init() {
+    var email: String = "" {
+        willSet(newValue) {
+            
+        }
+    }
+
+    var password: String = "" {
+        willSet(newValue) {
+            
+        }
     }
     
     static var tokenData = SigninModel()
     
-   
-    
-    func googleSignIn() {
+    func SignIn() {
         guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
         
         let nextVC = UIHostingController(rootView: PersonalDataView())
         nextVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
-        
-        GIDSignIn.sharedInstance.signIn(withPresenting: viewController) { signinResult, error in
-            if error == nil {
-                if let idToken = signinResult?.user.idToken?.tokenString {
-                    AF.request("\(Constant.url)/auth",
-                               method: .post,
-                               parameters: ["idToken":idToken] as Dictionary,
-                               encoding: JSONEncoding()
-                               
-                    )
-                    .validate()
-                    .responseDecodable(of: SigninModel.self) { response in
-                        switch response.result {
-                        case .success(let data):
-                            SigninViewModel.tokenData = data
-                            print(SigninViewModel.tokenData.accessToken)
-                            viewController.present(nextVC, animated: false)
-                            return
-                        case .failure(_):
-                            break
-                        }
+        if (email != "") && (password != "") {
+            AF.request("\(Constant.url)/auth/sign-in",
+                       method: .post,
+                       parameters: ["email" : email, "password" : password] as Dictionary,
+                       encoding: JSONEncoding()
+                       
+            )
+            .validate()
+            .responseDecodable(of: SigninModel.self) { response in
+                switch response.result {
+                case .success(let data):
+                    SigninViewModel.tokenData = data
+                    print(SigninViewModel.tokenData.accessToken ?? "")
+                    if !((SigninViewModel.tokenData.accessToken) == nil) {
+                        viewController.present(nextVC, animated: true)
                     }
+                    return
+                case .failure(let error):
+                    print(error.localizedDescription)
                 }
             }
-            
         }
-        
         
     }
 }
-
-
