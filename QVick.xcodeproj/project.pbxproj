@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		426B53512B578F7F00BDE077 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53502B578F7F00BDE077 /* SigninView.swift */; };
 		426B53532B579B3100BDE077 /* GetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53522B579B3100BDE077 /* GetInfoModel.swift */; };
 		426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */; };
 		426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53562B58B6ED00BDE077 /* QRCheckButton.swift */; };
@@ -23,10 +22,10 @@
 		42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */; };
 		42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */; };
 		42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */; };
-		42D500012B8C545F005EE62B /* TestSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500002B8C545F005EE62B /* TestSignInView.swift */; };
-		42D500032B8C5594005EE62B /* TestSignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500022B8C5594005EE62B /* TestSignInTextField.swift */; };
-		42D500062B8C5B89005EE62B /* TestSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500052B8C5B89005EE62B /* TestSignInModel.swift */; };
-		42D500092B8C5BD3005EE62B /* TestSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */; };
+		42D500012B8C545F005EE62B /* TestSigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500002B8C545F005EE62B /* TestSigninView.swift */; };
+		42D500032B8C5594005EE62B /* SigninTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500022B8C5594005EE62B /* SigninTextField.swift */; };
+		42D500062B8C5B89005EE62B /* TestSigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500052B8C5B89005EE62B /* TestSigninModel.swift */; };
+		42D500092B8C5BD3005EE62B /* TestSigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D500082B8C5BD3005EE62B /* TestSigninViewModel.swift */; };
 		453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */; };
 		453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00F92B56278E001C043C /* SchoolAskButton.swift */; };
 		453B00FD2B562B5B001C043C /* FontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B00FC2B562B5B001C043C /* FontExt.swift */; };
@@ -51,17 +50,25 @@
 		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
 		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
 		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
-		755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641422B56107F00F15ACD /* ExampleViewModel.swift */; };
-		755641452B56108800F15ACD /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641442B56108800F15ACD /* ExampleModel.swift */; };
 		755641472B56116500F15ACD /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641462B56116500F15ACD /* ExampleComponent.swift */; };
 		7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */; };
+		757D2A5F2BD21C2500D90291 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */; };
+		757D2A602BD21C2500D90291 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */; };
+		757D2A612BD21C2500D90291 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A582BD21C2400D90291 /* Pretendard-Medium.otf */; };
+		757D2A622BD21C2500D90291 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A592BD21C2400D90291 /* Pretendard-Thin.otf */; };
+		757D2A632BD21C2500D90291 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A5A2BD21C2500D90291 /* Pretendard-Black.otf */; };
+		757D2A642BD21C2500D90291 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A5B2BD21C2500D90291 /* Pretendard-Regular.otf */; };
+		757D2A652BD21C2500D90291 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A5C2BD21C2500D90291 /* Pretendard-SemiBold.otf */; };
+		757D2A662BD21C2500D90291 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A5D2BD21C2500D90291 /* Pretendard-Light.otf */; };
+		757D2A672BD21C2500D90291 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A5E2BD21C2500D90291 /* Pretendard-Bold.otf */; };
 		75881FD52B5A322100850541 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD42B5A322100850541 /* Constant.swift */; };
 		75881FD92B5A3B1B00850541 /* BundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75881FD82B5A3B1B00850541 /* BundleExt.swift */; };
+		75AA98A32BD1E74D00EDF542 /* SecondSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AA98A22BD1E74D00EDF542 /* SecondSignupView.swift */; };
 		75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */; };
 		75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */; };
 		75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */; };
 		75CCB1062B71E797008A030E /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CCB1052B71E797008A030E /* SigninModel.swift */; };
-		75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* LoginButton.swift */; };
+		75ECC4162B5798EC00C26726 /* SigninButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4142B5798EC00C26726 /* SigninButton.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
 		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
 		75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC41B2B579F7300C26726 /* GoogleSignInSwift */; };
@@ -72,7 +79,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		426B53502B578F7F00BDE077 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		426B53522B579B3100BDE077 /* GetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoModel.swift; sourceTree = "<group>"; };
 		426B53542B579B9C00BDE077 /* GetInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoViewModel.swift; sourceTree = "<group>"; };
 		426B53562B58B6ED00BDE077 /* QRCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCheckButton.swift; sourceTree = "<group>"; };
@@ -88,10 +94,10 @@
 		42AEB7362B56503600C6B1CB /* SchoolSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewModel.swift; sourceTree = "<group>"; };
 		42AEB7382B56506800C6B1CB /* SchoolSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionModel.swift; sourceTree = "<group>"; };
 		42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataCell.swift; sourceTree = "<group>"; };
-		42D500002B8C545F005EE62B /* TestSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInView.swift; sourceTree = "<group>"; };
-		42D500022B8C5594005EE62B /* TestSignInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInTextField.swift; sourceTree = "<group>"; };
-		42D500052B8C5B89005EE62B /* TestSignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInModel.swift; sourceTree = "<group>"; };
-		42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInViewModel.swift; sourceTree = "<group>"; };
+		42D500002B8C545F005EE62B /* TestSigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSigninView.swift; sourceTree = "<group>"; };
+		42D500022B8C5594005EE62B /* SigninTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninTextField.swift; sourceTree = "<group>"; };
+		42D500052B8C5B89005EE62B /* TestSigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSigninModel.swift; sourceTree = "<group>"; };
+		42D500082B8C5BD3005EE62B /* TestSigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSigninViewModel.swift; sourceTree = "<group>"; };
 		453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSelectionCell.swift; sourceTree = "<group>"; };
 		453B00F92B56278E001C043C /* SchoolAskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAskButton.swift; sourceTree = "<group>"; };
 		453B00FC2B562B5B001C043C /* FontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExt.swift; sourceTree = "<group>"; };
@@ -117,17 +123,25 @@
 		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
 		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
 		7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Bold.ttf"; sourceTree = "<group>"; };
-		755641422B56107F00F15ACD /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
-		755641442B56108800F15ACD /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		755641462B56116500F15ACD /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		757D2A582BD21C2400D90291 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		757D2A592BD21C2400D90291 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		757D2A5A2BD21C2500D90291 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		757D2A5B2BD21C2500D90291 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		757D2A5C2BD21C2500D90291 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		757D2A5D2BD21C2500D90291 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		757D2A5E2BD21C2500D90291 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		75881FD42B5A322100850541 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		75881FD82B5A3B1B00850541 /* BundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExt.swift; sourceTree = "<group>"; };
+		75AA98A22BD1E74D00EDF542 /* SecondSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupView.swift; sourceTree = "<group>"; };
 		75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraController.swift; sourceTree = "<group>"; };
 		75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraRepresentable.swift; sourceTree = "<group>"; };
 		75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraView.swift; sourceTree = "<group>"; };
 		75CCB1052B71E797008A030E /* SigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninModel.swift; sourceTree = "<group>"; };
-		75ECC4142B5798EC00C26726 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		75ECC4142B5798EC00C26726 /* SigninButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninButton.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		75ECC41D2B579F9800C26726 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
 		75F789822B58B716004A80BD /* LeaveOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutCell.swift; sourceTree = "<group>"; };
@@ -149,28 +163,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42D500042B8C5B57005EE62B /* TestSignIn */ = {
+		42D5FFE82B8B0C22005EE62B /* Signin */ = {
 			isa = PBXGroup;
 			children = (
-				42D500052B8C5B89005EE62B /* TestSignInModel.swift */,
+				42D500002B8C545F005EE62B /* TestSigninView.swift */,
 			);
-			path = TestSignIn;
-			sourceTree = "<group>";
-		};
-		42D500072B8C5BB2005EE62B /* TestSignInViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				42D500082B8C5BD3005EE62B /* TestSignInViewModel.swift */,
-			);
-			path = TestSignInViewModel;
-			sourceTree = "<group>";
-		};
-		42D5FFE82B8B0C22005EE62B /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				42D500002B8C545F005EE62B /* TestSignInView.swift */,
-			);
-			path = LoginView;
+			path = Signin;
 			sourceTree = "<group>";
 		};
 		453B00FB2B562B44001C043C /* Extenstion */ = {
@@ -241,6 +239,15 @@
 				7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */,
 				755641382B560C0D00F15ACD /* Judson-Italic.ttf */,
 				755641392B560C0D00F15ACD /* Judson-Regular.ttf */,
+				757D2A5A2BD21C2500D90291 /* Pretendard-Black.otf */,
+				757D2A5E2BD21C2500D90291 /* Pretendard-Bold.otf */,
+				757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */,
+				757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */,
+				757D2A5D2BD21C2500D90291 /* Pretendard-Light.otf */,
+				757D2A582BD21C2400D90291 /* Pretendard-Medium.otf */,
+				757D2A5B2BD21C2500D90291 /* Pretendard-Regular.otf */,
+				757D2A5C2BD21C2500D90291 /* Pretendard-SemiBold.otf */,
+				757D2A592BD21C2400D90291 /* Pretendard-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -252,7 +259,7 @@
 				453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */,
 				453B00F92B56278E001C043C /* SchoolAskButton.swift */,
 				42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */,
-				75ECC4142B5798EC00C26726 /* LoginButton.swift */,
+				75ECC4142B5798EC00C26726 /* SigninButton.swift */,
 				75ECC4152B5798EC00C26726 /* WebView.swift */,
 				453B01082B579A2A001C043C /* NextButton.swift */,
 				75F789822B58B716004A80BD /* LeaveOutCell.swift */,
@@ -268,7 +275,7 @@
 				426B53682B5FAC5C00BDE077 /* TimeCell.swift */,
 				426B536A2B5FACDA00BDE077 /* ReasonCell.swift */,
 				453B01772B5F71D2001C043C /* GetInfoTextField.swift */,
-				42D500022B8C5594005EE62B /* TestSignInTextField.swift */,
+				42D500022B8C5594005EE62B /* SigninTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -276,11 +283,11 @@
 		7556413F2B560F9400F15ACD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7509BB162B4B88A5005A62AD /* ContentView.swift */,
+				75AA98A12BD1E73B00EDF542 /* Content */,
+				75AA98A02BD1E72900EDF542 /* Signup */,
 				75C030B82B6253F100FD5485 /* SchoolSelection */,
 				75C030B92B62540400FD5485 /* PersonalData */,
-				75C030BA2B62541000FD5485 /* SigninView */,
-				42D5FFE82B8B0C22005EE62B /* LoginView */,
+				42D5FFE82B8B0C22005EE62B /* Signin */,
 				75C030BB2B62541B00FD5485 /* GetInfo */,
 				75C030BC2B62543800FD5485 /* Main */,
 				75C030BD2B62549900FD5485 /* Settings */,
@@ -294,13 +301,11 @@
 		755641402B56101400F15ACD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				755641442B56108800F15ACD /* ExampleModel.swift */,
 				75CCB1042B71E77B008A030E /* Signin */,
 				75C030C22B6254FE00FD5485 /* SchoolSelection */,
 				75C030C42B62555700FD5485 /* PersonalData */,
 				75C030C52B62556500FD5485 /* GetInfo */,
 				75C030C82B62558D00FD5485 /* LeaveOut */,
-				42D500042B8C5B57005EE62B /* TestSignIn */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,12 +313,10 @@
 		755641412B56101900F15ACD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				755641422B56107F00F15ACD /* ExampleViewModel.swift */,
 				75C030C12B6254F300FD5485 /* SchoolSelection */,
 				75C030C32B62555000FD5485 /* PersonalData */,
 				75C030C62B62556C00FD5485 /* GetInfo */,
 				75C030C72B62558700FD5485 /* Signin */,
-				42D500072B8C5BB2005EE62B /* TestSignInViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -324,6 +327,22 @@
 				75881FD42B5A322100850541 /* Constant.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		75AA98A02BD1E72900EDF542 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				75AA98A22BD1E74D00EDF542 /* SecondSignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		75AA98A12BD1E73B00EDF542 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7509BB162B4B88A5005A62AD /* ContentView.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		75C030B82B6253F100FD5485 /* SchoolSelection */ = {
@@ -340,14 +359,6 @@
 				7513C51C2B56764200A198E3 /* PersonalDataView.swift */,
 			);
 			path = PersonalData;
-			sourceTree = "<group>";
-		};
-		75C030BA2B62541000FD5485 /* SigninView */ = {
-			isa = PBXGroup;
-			children = (
-				426B53502B578F7F00BDE077 /* SigninView.swift */,
-			);
-			path = SigninView;
 			sourceTree = "<group>";
 		};
 		75C030BB2B62541B00FD5485 /* GetInfo */ = {
@@ -453,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				75ECC41D2B579F9800C26726 /* SigninViewModel.swift */,
+				42D500082B8C5BD3005EE62B /* TestSigninViewModel.swift */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -468,6 +480,7 @@
 		75CCB1042B71E77B008A030E /* Signin */ = {
 			isa = PBXGroup;
 			children = (
+				42D500052B8C5B89005EE62B /* TestSigninModel.swift */,
 				75CCB1052B71E797008A030E /* SigninModel.swift */,
 			);
 			path = Signin;
@@ -547,9 +560,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757D2A662BD21C2500D90291 /* Pretendard-Light.otf in Resources */,
+				757D2A602BD21C2500D90291 /* Pretendard-ExtraLight.otf in Resources */,
 				7509BB192B4B88A7005A62AD /* Assets.xcassets in Resources */,
 				7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */,
+				757D2A652BD21C2500D90291 /* Pretendard-SemiBold.otf in Resources */,
+				757D2A622BD21C2500D90291 /* Pretendard-Thin.otf in Resources */,
+				757D2A632BD21C2500D90291 /* Pretendard-Black.otf in Resources */,
+				757D2A612BD21C2500D90291 /* Pretendard-Medium.otf in Resources */,
+				757D2A5F2BD21C2500D90291 /* Pretendard-ExtraBold.otf in Resources */,
+				757D2A672BD21C2500D90291 /* Pretendard-Bold.otf in Resources */,
 				7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */,
+				757D2A642BD21C2500D90291 /* Pretendard-Regular.otf in Resources */,
 				7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */,
 				7519FD2D2B83472A00443062 /* ApiContent.plist in Resources */,
 			);
@@ -563,14 +585,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				426B535D2B5E9D8300BDE077 /* SettingsView.swift in Sources */,
-				75ECC4162B5798EC00C26726 /* LoginButton.swift in Sources */,
+				75ECC4162B5798EC00C26726 /* SigninButton.swift in Sources */,
 				75ECC4172B5798EC00C26726 /* WebView.swift in Sources */,
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
 				75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */,
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
 				426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
-				42D500092B8C5BD3005EE62B /* TestSignInViewModel.swift in Sources */,
+				42D500092B8C5BD3005EE62B /* TestSigninViewModel.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
 				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
@@ -580,18 +602,16 @@
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
 				453B01722B5E222E001C043C /* ProfileView.swift in Sources */,
 				426B53692B5FAC5C00BDE077 /* TimeCell.swift in Sources */,
-				42D500032B8C5594005EE62B /* TestSignInTextField.swift in Sources */,
+				42D500032B8C5594005EE62B /* SigninTextField.swift in Sources */,
 				453B01032B5666BE001C043C /* PersonalDataViewModel.swift in Sources */,
 				75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */,
 				453B00FA2B56278E001C043C /* SchoolAskButton.swift in Sources */,
 				453B010B2B579F4E001C043C /* ViewExt.swift in Sources */,
-				755641432B56107F00F15ACD /* ExampleViewModel.swift in Sources */,
+				75AA98A32BD1E74D00EDF542 /* SecondSignupView.swift in Sources */,
 				426B536B2B5FACDA00BDE077 /* ReasonCell.swift in Sources */,
-				426B53512B578F7F00BDE077 /* SigninView.swift in Sources */,
 				426B53652B5F8B3300BDE077 /* ApplicationButton.swift in Sources */,
-				42D500012B8C545F005EE62B /* TestSignInView.swift in Sources */,
+				42D500012B8C545F005EE62B /* TestSigninView.swift in Sources */,
 				7513C51D2B56764200A198E3 /* PersonalDataView.swift in Sources */,
-				755641452B56108800F15ACD /* ExampleModel.swift in Sources */,
 				75881FD52B5A322100850541 /* Constant.swift in Sources */,
 				453B010D2B58B65A001C043C /* GetInfoView.swift in Sources */,
 				7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */,
@@ -613,7 +633,7 @@
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 				426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */,
 				453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */,
-				42D500062B8C5B89005EE62B /* TestSignInModel.swift in Sources */,
+				42D500062B8C5B89005EE62B /* TestSigninModel.swift in Sources */,
 				453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);
@@ -770,6 +790,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -805,6 +826,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

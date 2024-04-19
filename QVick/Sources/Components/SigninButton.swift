@@ -1,5 +1,5 @@
 //
-//  LoginButton.swift
+//  SigninButton.swift
 //  QVick
 //
 //  Created by dgsw8th36 on 1/17/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginButton: View {
+struct SigninButton: View {
     
     let imageName: String
     let action: () -> Void
@@ -34,8 +34,8 @@ struct LoginButton: View {
 #Preview {
     ZStack {
         Color.gray
-        LoginButton(imageName: "DodamIcon", action: {
+        SigninButton(imageName: "DodamIcon") {
             print("신민호")
-        })
+        }
     }
 }

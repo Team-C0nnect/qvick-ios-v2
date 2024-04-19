@@ -34,7 +34,14 @@ struct PersonalDataCell: View {
                     .foregroundStyle(.clear)
                     .overlay {
                         ZStack {
-                            Circle().stroke(.white, lineWidth: 1)
+                            Circle()
+                                .stroke(.white, lineWidth: 1)
+                                .overlay {
+                                    if isClicked {
+                                        Color.green
+                                            .scaleEffect(0.9)
+                                    }
+                                }
                             
                             Image(systemName: "checkmark")
                                 .font(.system(size: 12).weight(.semibold))
