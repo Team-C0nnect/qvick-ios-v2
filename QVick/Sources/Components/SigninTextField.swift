@@ -55,6 +55,7 @@ struct SigninTextField: View {
                     .font(.pretendard(.bold, 11))
                     .tint(.white)
                     .foregroundStyle(Color.white)
+                    .textInputAutocapitalization(.never)
                 
             }
             

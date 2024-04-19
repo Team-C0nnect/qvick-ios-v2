@@ -2,40 +2,33 @@
 //  SigninButton.swift
 //  QVick
 //
-//  Created by dgsw8th36 on 1/17/24.
+//  Created by dgsw8th32 on 4/18/24.
 //
 
 import SwiftUI
 
 struct SigninButton: View {
-    
-    let imageName: String
-    let action: () -> Void
+    @EnvironmentObject var viewModel: SigninViewModel
     
     var body: some View {
-        ZStack {
-            Button {
-                action()
-            } label: {
-                
-                RoundedRectangle(cornerRadius: 40)
-                    .frame(width: 100, height: 100)
-                    .foregroundStyle(.white)
-                    .overlay {
-                        Image("\(imageName)")
-                    }
-                
-            }
-            
-        }
+        Button(action: {
+            viewModel.SignIn()
+            print("이메일 : \(viewModel.email)")
+            print("비밀번호 : \(viewModel.password)")
+        }, label: {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 340, height: 55)
+                .foregroundStyle(Color.baseGreen)
+                .overlay {
+                    Text("로그인")
+                        .font(.judson(.bold, 20))
+                        .foregroundStyle(.white)
+                }
+        })
     }
 }
 
 #Preview {
-    ZStack {
-        Color.gray
-        SigninButton(imageName: "DodamIcon") {
-            print("신민호")
-        }
-    }
+    SigninButton()
+        .environmentObject(SigninViewModel())
 }

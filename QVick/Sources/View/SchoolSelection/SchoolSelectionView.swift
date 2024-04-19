@@ -44,7 +44,7 @@ struct SchoolSelectionView: View {
                 ScrollView {
                     
                     NavigationLink {
-                        TestSigninView()
+                        SigninView()
                     } label: {
                         SchoolSelectionCell(schoolName: "대구소프트웨어마이스터고등학교", schoolAddress: "대구광역시 달성군 구지면 창리로11길 93")
                             .foregroundStyle(.black)
