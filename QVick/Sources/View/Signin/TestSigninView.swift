@@ -1,5 +1,5 @@
 //
-//  TestSignInView.swift
+//  TestSigninView.swift
 //  QVick
 //
 //  Created by dgsw8th32 on 2/26/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestSignInView: View {
+struct TestSigninView: View {
     @ObservedObject var signinViewModel = SigninViewModel()
     @StateObject var testSignInViewModel = TestSignInViewModel()
     @State var isMaintain: Bool = false
@@ -27,10 +27,7 @@ struct TestSignInView: View {
                     .padding(.vertical, 5)
                     .padding(.bottom, 70)
                 
-                TestSignInTextField(name: "이메일", text: $testSignInViewModel.email, prompt: "예) minhogogo@gmail.com")
                 
-                TestSignInTextField(name: "비밀번호", text: $testSignInViewModel.password, prompt: "", type: .secure)
-                    .padding(.vertical, 10)
                 
                 HStack {
                     Button(action: {
@@ -95,7 +92,7 @@ struct TestSignInView: View {
                     .foregroundStyle(.white)
                     .font(.judson(.bold, 15))
                 
-                LoginButton(imageName: "GoogleIcon") {
+                SigninButton(imageName: "GoogleIcon") {
                     signinViewModel.googleSignIn()
                 }
                 .scaleEffect(x: 0.5, y: 0.5)
@@ -113,5 +110,5 @@ struct TestSignInView: View {
 }
 
 #Preview {
-    TestSignInView()
+    TestSigninView()
 }
