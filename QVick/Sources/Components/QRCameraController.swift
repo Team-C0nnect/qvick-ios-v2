@@ -67,7 +67,7 @@ class QRCameraController: UIViewController, AVCaptureMetadataOutputObjectsDelega
         
         self.currentCamera = self.backCamera
     }
-    
+        
     func setUpInOutPut() {
         do {
             let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)

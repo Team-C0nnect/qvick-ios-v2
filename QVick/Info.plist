@@ -9,12 +9,12 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.93255668456-b97o6rrfa4uui1sqrtdia0hg2pbsir0l</string>
+				<string>com.googleusercontent.apps.246755219900-e9b02h2i109s7gj0cpp62s7ooqkhvt9m</string>
 			</array>
 		</dict>
 	</array>
 	<key>GIDClientID</key>
-	<string>93255668456-b97o6rrfa4uui1sqrtdia0hg2pbsir0l.apps.googleusercontent.com</string>
+	<string>246755219900-e9b02h2i109s7gj0cpp62s7ooqkhvt9m.apps.googleusercontent.com</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -25,6 +25,15 @@
 		<string>Judson-Bold.ttf</string>
 		<string>Judson-Italic.ttf</string>
 		<string>Judson-Regular.ttf</string>
+		<string>Pretendard-Black.otf</string>
+		<string>Pretendard-Bold.otf</string>
+		<string>Pretendard-ExtraBold.otf</string>
+		<string>Pretendard-ExtraLight.otf</string>
+		<string>Pretendard-Light.otf</string>
+		<string>Pretendard-Medium.otf</string>
+		<string>Pretendard-Regular.otf</string>
+		<string>Pretendard-SemiBold.otf</string>
+		<string>Pretendard-Thin.otf</string>
 	</array>
 </dict>
 </plist>

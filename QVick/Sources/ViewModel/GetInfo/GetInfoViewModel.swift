@@ -19,7 +19,7 @@ class GetInfoViewModel: ObservableObject {
                    method: .post,
                    parameters: ["stdId" : info.studentNumber] as Dictionary,
                    encoding: JSONEncoding(),
-                   headers: ["Authorization": "Bearer \(LoginViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
         )
         .validate()
         .response { response in
@@ -44,7 +44,7 @@ class GetInfoViewModel: ObservableObject {
                    method: .post,
                    parameters: ["roomId" : info.roomNumber] as Dictionary,
                    encoding: JSONEncoding(),
-                   headers: ["Authorization": "Bearer \(LoginViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
         )
         .validate()
         .response { response in

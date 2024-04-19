@@ -76,8 +76,12 @@ struct PersonalDataView: View {
                                             .strokeBorder(Color.white, lineWidth: 1)
                                             .frame(width: 25, height: 25)
                                         
+                                        Circle()
+                                            .foregroundStyle(personalViewModel.totalAccept ? .clear : .green)
+                                            .frame(width: 23, height: 23)
+                                        
                                         Image(systemName: "checkmark")
-                                            .foregroundStyle(!personalViewModel.totalAccept ? .white : .clear)
+                                            .foregroundStyle(personalViewModel.totalAccept ? .clear : .white)
                                             .font(.system(size: 12).weight(.semibold))
                                     }
                                 }

@@ -10,7 +10,7 @@ import Alamofire
 
 struct QRCameraView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var loginViewModel = LoginViewModel()
+    @ObservedObject var loginViewModel = SigninViewModel()
     @State var inputImage: UIImage?
     @State var value: String = ""
     
@@ -23,7 +23,7 @@ struct QRCameraView: View {
                 
                 if value != "" {
                     let header: HTTPHeaders = [
-                        .authorization(bearerToken: LoginViewModel.tokenData.accessToken ?? " ")
+                        .authorization(bearerToken: SigninViewModel.tokenData.accessToken ?? " ")
                     ]
                     
                     AF.request(

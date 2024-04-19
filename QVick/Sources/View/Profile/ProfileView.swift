@@ -46,14 +46,7 @@ struct ProfileView: View {
                     
                     Spacer()
                     
-                    Button {
-                        // 수정하는 뷰?
-                        fixState.toggle()
-                    } label: {
-                        Text(fixState ? "완료" : "수정하기")
-                            .font(.judson(.bold, 20))
-                            .foregroundStyle(.white)
-                    }
+                  
                     
                 }
                 .padding(.horizontal, 30)
