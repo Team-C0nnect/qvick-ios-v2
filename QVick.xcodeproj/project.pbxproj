@@ -49,7 +49,6 @@
 		7556413B2B560C0E00F15ACD /* Judson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641382B560C0D00F15ACD /* Judson-Italic.ttf */; };
 		7556413C2B560C0E00F15ACD /* Judson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 755641392B560C0D00F15ACD /* Judson-Regular.ttf */; };
 		7556413D2B560C0E00F15ACD /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */; };
-		755641472B56116500F15ACD /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755641462B56116500F15ACD /* ExampleComponent.swift */; };
 		7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */; };
 		757D2A5F2BD21C2500D90291 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */; };
 		757D2A602BD21C2500D90291 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */; };
@@ -121,7 +120,6 @@
 		755641382B560C0D00F15ACD /* Judson-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Italic.ttf"; sourceTree = "<group>"; };
 		755641392B560C0D00F15ACD /* Judson-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Regular.ttf"; sourceTree = "<group>"; };
 		7556413A2B560C0E00F15ACD /* Judson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Bold.ttf"; sourceTree = "<group>"; };
-		755641462B56116500F15ACD /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 		7556413E2B560DE100F15ACD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				755641462B56116500F15ACD /* ExampleComponent.swift */,
 				453B00F72B561FCA001C043C /* SchoolSelectionCell.swift */,
 				453B00F92B56278E001C043C /* SchoolAskButton.swift */,
 				42AEB73A2B5664C200C6B1CB /* PersonalDataCell.swift */,
@@ -258,8 +255,7 @@
 				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 				7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */,
 				453B01732B5E24BA001C043C /* ProfileCell.swift */,
-				75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */,
-				75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */,
+				75A597772BD3BDA600B42A4C /* QRCamera */,
 				426B53642B5F8B3300BDE077 /* ApplicationButton.swift */,
 				426B53662B5F8D2400BDE077 /* DatePickerCell.swift */,
 				426B53682B5FAC5C00BDE077 /* TimeCell.swift */,
@@ -318,6 +314,15 @@
 				75881FD42B5A322100850541 /* Constant.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		75A597772BD3BDA600B42A4C /* QRCamera */ = {
+			isa = PBXGroup;
+			children = (
+				75AEA9E02B5F6BB70064BD16 /* QRCameraController.swift */,
+				75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */,
+			);
+			path = QRCamera;
 			sourceTree = "<group>";
 		};
 		75AA98A02BD1E72900EDF542 /* Signup */ = {
@@ -592,7 +597,6 @@
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
 				42AEB73B2B5664C200C6B1CB /* PersonalDataCell.swift in Sources */,
 				426B53552B579B9C00BDE077 /* GetInfoViewModel.swift in Sources */,
-				755641472B56116500F15ACD /* ExampleComponent.swift in Sources */,
 				75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */,
 				453B01092B579A2A001C043C /* NextButton.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
