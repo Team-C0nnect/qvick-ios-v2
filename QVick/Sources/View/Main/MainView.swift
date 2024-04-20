@@ -59,9 +59,11 @@ struct MainView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blueGray)
             .navigationBarBackButtonHidden()
+            .navigationBarHidden(true)
             .onAppear {
                 vm.checkAttendence()
             }
+            
         }
         
     }

@@ -13,6 +13,8 @@ struct QVickApp: App {
         WindowGroup {
             NavigationView {
                 SigninView()
+                    .navigationBarHidden(true)
+                    
             }
         }
     }

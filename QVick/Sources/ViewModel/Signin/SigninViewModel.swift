@@ -9,19 +9,9 @@ import SwiftUI
 import Alamofire
 
 class SigninViewModel: ObservableObject {
-    var email: String = "" {
-        willSet(newValue) {
-            
-        }
-    }
-
-    var password: String = "" {
-        willSet(newValue) {
-            
-        }
-    }
+    @Published var model = SigninModel()
     
-    static var tokenData = SigninModel()
+    static var tokenData = TokenModel()
     
     func signin() {
         guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
@@ -29,15 +19,15 @@ class SigninViewModel: ObservableObject {
         let nextVC = UIHostingController(rootView: MainView())
         nextVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
-        if (email != "") && (password != "") {
+        if (self.model.email != "") && (self.model.password != "") {
             AF.request("\(Constant.url)/auth/sign-in",
                        method: .post,
-                       parameters: ["email" : email, "password" : password] as Dictionary,
+                       parameters: self.model.params,
                        encoding: JSONEncoding()
                        
             )
             .validate()
-            .responseDecodable(of: SigninModel.self) { response in
+            .responseDecodable(of: TokenModel.self) { response in
                 switch response.result {
                 case .success(let data):
                     SigninViewModel.tokenData = data
