@@ -20,7 +20,6 @@ struct LeaveOutView: View {
             
             Spacer()
             
-            ApplicationButton(action: "외출 신청")
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity, maxHeight: .infinity)

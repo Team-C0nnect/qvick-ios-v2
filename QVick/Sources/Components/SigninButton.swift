@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct SigninButton: View {
-    @EnvironmentObject var viewModel: SigninViewModel
+    let title: String
+    let action: () -> ()
+    
+    init(title: String, action: @escaping () -> Void) {
+        self.title = title
+        self.action = action
+    }
+    
     
     var body: some View {
         Button(action: {
-            viewModel.SignIn()
-            print("이메일 : \(viewModel.email)")
-            print("비밀번호 : \(viewModel.password)")
+            action()
+           
         }, label: {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 340, height: 55)
                 .foregroundStyle(Color.baseGreen)
                 .overlay {
-                    Text("로그인")
-                        .font(.judson(.bold, 20))
+                    Text("\(title)")
+                        .font(.pretendard(.bold, 20))
                         .foregroundStyle(.white)
                 }
         })
@@ -29,6 +35,6 @@ struct SigninButton: View {
 }
 
 #Preview {
-    SigninButton()
-        .environmentObject(SigninViewModel())
+    SigninButton(title: "", action: {})
+        
 }

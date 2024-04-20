@@ -19,7 +19,7 @@ struct GetInfoTextField: View {
                       text: $number,
                       prompt: Text("\(prompt)").foregroundColor(Color.white)
             )
-            .font(.judson(.bold, 20))
+            .font(.pretendard(.bold, 20))
             .foregroundStyle(Color.white)
             
             Rectangle()

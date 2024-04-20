@@ -17,7 +17,7 @@ struct ApplicationView: View {
         VStack(spacing: 0) {
             HStack {
                 Text("외박/외출 신청")
-                    .font(.judson(.bold, 30))
+                    .font(.pretendard(.bold, 30))
                     .foregroundStyle(.white)
                 
                 Spacer()
@@ -38,7 +38,7 @@ struct ApplicationView: View {
             
             HStack {
                 Text("신청할 날짜와 시간 및 사유를 써주세요")
-                    .font(.judson(.bold, 11))
+                    .font(.pretendard(.bold, 11))
                     .foregroundStyle(.white)
                 
                 Spacer()

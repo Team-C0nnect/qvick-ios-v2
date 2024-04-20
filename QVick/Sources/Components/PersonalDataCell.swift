@@ -54,7 +54,7 @@ struct PersonalDataCell: View {
             .padding(.trailing)
             
             Text(label)
-                .font(.judson(Judson.bold, 15))
+                .font(.pretendard(.bold, 15))
                 .foregroundStyle(.white)
             
             Spacer()

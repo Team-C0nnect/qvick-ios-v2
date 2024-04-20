@@ -11,84 +11,77 @@ struct FirstSignupView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @ObservedObject var signupViewModel = SignupViewModel()
+    @EnvironmentObject var vm: SignupViewModel
     
     var body: some View {
-        VStack {
-            
-            VStack(spacing: 20) {
-                
-                HStack(spacing: 0) {
-                    
-                    Button {
-                        self.presentationMode.wrappedValue.dismiss()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                            .font(.judson(.regular, 20))
-                            .foregroundStyle(Color.white)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("회원가입")
-                        .font(.judson(.bold, 24))
-                        .foregroundStyle(Color.white)
-                        .padding(.trailing, 20)
-                    
-                    Spacer()
-                }
+        VStack(spacing: 30) {
+            Rectangle()
+                .frame(height: 1)
+                .foregroundStyle(Color.white)
                 .padding(.horizontal, 20)
-                
-                Rectangle()
-                    .frame(width: 360, height: 1)
-                    .foregroundStyle(Color.white)
-            }
-            .padding(.vertical, 30)
+                .padding(.vertical, 20)
             
-            Text("회원가입을 위해 정보를 입력해주세요.")
-                .font(.pretendard(.bold, 20))
-                .foregroundStyle(.white)
-                .padding(.trailing, 58)
-                .padding(.bottom, 45)
+            HStack {
+                Text("회원가입을 위해 정보를 입력해주세요.")
+                    .font(.pretendard(.bold, 20))
+                    .foregroundStyle(Color.white)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 25)
+            
             
             VStack(spacing: 40) {
                 
-                SigninTextField(title: "아이디(이메일)", icon: "person.fill", text: $signupViewModel.info.email, prompt: "이메일을 입력해주세요.")
+                SigninTextField(title: "아이디(이메일)", icon: "person.fill", text: $vm.model.email, prompt: "이메일을 입력해주세요.")
                 
-                SigninTextField(title: "비밀번호", icon: "lock.fill", text: $signupViewModel.info.password, prompt: "비밀번호를 입력해주세요.", type: .secure)
+                SigninTextField(title: "비밀번호", icon: "lock.fill", text: $vm.model.password, prompt: "비밀번호를 입력해주세요.", type: .secure)
                 
-                SigninTextField(title: "비밀번호 확인", icon: "lock.fill", text: $signupViewModel.info.passwordCheck, prompt: "비밀번호를 입력해주세요.", type: .secure)
+                SigninTextField(title: "비밀번호 확인", icon: "lock.fill", text: $vm.model.passwordVerify, prompt: "비밀번호를 입력해주세요.", type: .secure)
                 
             }
             
             Spacer()
             
-            NavigationLink {
-                // 정보 입력 뷰
+            NavigationLink() {
+                SecondSignupView()
+                    .navigationBarBackButtonHidden()
+                    .environmentObject(vm)
             } label: {
-                
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(height: 54)
-                    .frame(maxWidth: .infinity)
-                    .foregroundStyle(Color.baseGreen)
-                    .overlay {
-                        Text("다음")
-                            .font(.pretendard(Pretendard.bold, 20))
-                            .foregroundStyle(Color.white)
-                    }
-                    .padding(.horizontal, 27)
-                
+                SigninButton(title: "다음") {
+                }
+                .disabled(true)
             }
-            .padding(.bottom, 10)
-//            .disabled(disable)
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    self.presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                }
+                .tint(Color.white)
+            }
+            
+            
+            ToolbarItem(placement: .principal) {
+                    Text("회원가입")
+                        .foregroundStyle(Color.white)
+                        .font(.pretendard(.bold, 24))
+
+            }
+            
+            
+        }
         
     }
 }
 
 #Preview {
-    FirstSignupView()
+    NavigationView {
+        FirstSignupView()
+    }
 }

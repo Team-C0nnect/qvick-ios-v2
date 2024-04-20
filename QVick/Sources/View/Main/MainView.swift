@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    
-    let dummyDate: String = "01월 16일 21시 10분"
+    @StateObject var vm = MainViewModel()
     
     var body: some View {
         NavigationView {
@@ -25,7 +24,8 @@ struct MainView: View {
                     Spacer()
                     
                     HamburgerButton(view: {
-                        AnyView(ProfileView())
+                        AnyView(SettingsView().environmentObject(vm))
+                            
                     })
                     
                 }
@@ -34,19 +34,15 @@ struct MainView: View {
                 VStack(spacing: 10) {
                     HStack {
                         Text("출석")
-                            .font(.judson(.bold, 32))
+                            .font(.pretendard(.bold, 32))
                             .foregroundStyle(Color.white)
                         
                         Spacer()
                         
                         VStack {
-                            Text("출석완료")
-                                .font(.judson(.bold, 25))
-                                .foregroundStyle(Color.baseGreen)
-                            
-                            Text("\(dummyDate)")
-                                .font(.judson(.regular, 12))
-                                .foregroundStyle(Color.white)
+                            Text(vm.isCheck ? "출석완료" : "출석미완료")
+                                .font(.pretendard(.bold, 25))
+                                .foregroundStyle(vm.isCheck ? Color.baseGreen : Color.deepOrange)
                         }
                     }
                     .padding(.horizontal, 30)
@@ -56,34 +52,18 @@ struct MainView: View {
                     })
                 }
                 
-                VStack(spacing: 10) {
-                    HStack {
-                        Text("외출 신청")
-                            .font(.judson(.bold, 32))
-                            .foregroundStyle(Color.white)
-                        
-                        Spacer()
-                    }
-                    .padding(.horizontal, 30)
-                    
-                    LeaveOutList {
-                        LeaveOutModel(id: 0, date: Date.now, reason: "ws", accept: false)
-                        LeaveOutModel(id: 0, date: Date.now, reason: "ws", accept: false)
-                        LeaveOutModel(id: 0, date: Date.now, reason: "ws", accept: true)
-                    }
-                }
-                
                 Spacer()
                 
             }
             .padding(.vertical, 30)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blueGray)
-            .navigationBarHidden(true)
-            
+            .navigationBarBackButtonHidden()
+            .onAppear {
+                vm.checkAttendence()
+            }
         }
-        .navigationBarBackButtonHidden()
-        .navigationBarHidden(true)
+        
     }
 }
 

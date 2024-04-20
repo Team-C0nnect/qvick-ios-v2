@@ -25,7 +25,7 @@ struct TimeCell: View {
             
             DatePicker(selection: $date, in: Date()..., displayedComponents: .hourAndMinute) {
                 Text(label)
-                    .font(.judson(.bold, 15))
+                    .font(.pretendard(.bold, 15))
                     .foregroundStyle(.white)
             }
             .padding(.horizontal, 30)

@@ -36,9 +36,10 @@ struct QRCheckButton: View {
                         Spacer()
                         
                         Text("출석하기")
-                            .font(.judson(.bold, 20))
+                            .font(.pretendard(.bold, 20))
+                        
                         Image(systemName: "chevron.right")
-                            .font(.judson(.bold, 20))
+                            .font(.pretendard(.bold, 20))
                             .padding(.trailing)
                     }
                 }

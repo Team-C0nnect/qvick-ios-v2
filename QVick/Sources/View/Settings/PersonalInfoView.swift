@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct PersonalInfoView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @State var text: String = ""
     
     var body: some View {
         VStack {
@@ -21,14 +23,14 @@ struct PersonalInfoView: View {
                         self.presentationMode.wrappedValue.dismiss()
                     } label: {
                         Image(systemName: "chevron.left")
-                            .font(.judson(.regular, 20))
+                            .font(.pretendard(.regular, 20))
                             .foregroundStyle(Color.white)
                     }
                     
                     Spacer()
                     
                     Text("이용약관")
-                        .font(.judson(.bold, 24))
+                        .font(.pretendard(.bold, 24))
                         .foregroundStyle(Color.white)
                         .padding(.trailing, 20)
                     
@@ -54,12 +56,30 @@ struct PersonalInfoView: View {
             .padding(.horizontal, 30)
             .padding(.vertical, 10)
             
-            Spacer()
+            ScrollView {
+                Text("\(text)")
+                    .font(.pretendard(.bold, 24))
+                    .foregroundStyle(Color.white)
+                    .padding(.horizontal, 10)
+            }
             
         }
         .padding(.vertical, 30)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
+        .onAppear {
+            AF.request("\(Constant.url)/terms/use-term",
+                       method: .get
+            )
+            .response { response in
+                switch response.result {
+                case .success(let data):
+                    self.text = String(htmlEncodedString: String(decoding: data ?? .init(), as: UTF8.self)) ?? ""
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        }
         .navigationBarBackButtonHidden()
         
     }

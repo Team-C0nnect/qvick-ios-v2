@@ -11,74 +11,67 @@ struct ProfileView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @StateObject var vm = ProfileViewModel()
+    @EnvironmentObject var profileVM: ProfileViewModel
+    @EnvironmentObject var mainVM: MainViewModel
     
-    @State var fixState: Bool = false
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
+        VStack(spacing: 20) {
+            
+            HStack {
                 
-                HStack {
+                Button {
                     
-                    Button {
-                        
-                        self.presentationMode.wrappedValue.dismiss()
-                        
-                    } label: {
-                        
-                        Image(systemName: "chevron.left")
-                            .font(.judson(.regular, 20))
-                            .foregroundStyle(Color.white)
-                        
-                    }
+                    self.presentationMode.wrappedValue.dismiss()
                     
-                    Spacer()
+                } label: {
+                    
+                    Image(systemName: "chevron.left")
+                        .font(.pretendard(.regular, 20))
+                        .foregroundStyle(Color.white)
                     
                 }
-                .padding(.horizontal, 30)
                 
-                HStack {
-                    
-                    Text("프로필")
-                        .font(.judson(.bold, 32))
-                        .foregroundStyle(.white)
-                    
-                    Spacer()
-                    
-                  
-                    
-                }
-                .padding(.horizontal, 30)
+                Spacer()
                 
-                Circle()
-                    .frame(width: 180, height: 180)
+            }
+            .padding(.horizontal, 30)
+            
+            HStack {
                 
-                VStack(spacing: 30) {
-                    
-                    ProfileCell(title: "이름", name: "윤세욱")
-                    
-                    ProfileCell(title: "학번", name: "\(vm.userInfo.stdId)")
-                    
-                    ProfileCell(title: "호수", name: "\(vm.userInfo.roomId)")
-                    
-                    ProfileCell(title: "출석여부", name: "출석", attendance: true)
-                    
-                }
-                .padding(.vertical, 10)
+                Text("프로필")
+                    .font(.pretendard(.bold, 32))
+                    .foregroundStyle(.white)
                 
                 Spacer()
                 
                 
+                
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.blackGray)
-            .navigationBarHidden(true)
+            .padding(.horizontal, 30)
+            
+            Circle()
+                .frame(width: 180, height: 180)
+            
+            VStack(spacing: 30) {
+                
+                ProfileCell(title: "이름", name: profileVM.model.name)
+                
+                ProfileCell(title: "학번", name: profileVM.model.stdId)
+                
+                ProfileCell(title: "호수", name: profileVM.model.room ?? "없음")
+                
+                ProfileCell(title: "출석여부", name: mainVM.isCheck ? "출석" : "X", attendance: mainVM.isCheck)
+                
+            }
+            .padding(.vertical, 10)
+            
+            Spacer()
+            
             
         }
-        .onAppear {
-            vm.getUserInfo()
-        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.blackGray)
         .navigationBarBackButtonHidden()
         
         
@@ -87,4 +80,6 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView()
+        .environmentObject(ProfileViewModel())
+        .environmentObject(MainViewModel())
 }

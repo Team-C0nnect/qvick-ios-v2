@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ToggleButton(isOn: $isOn)
+            Text("\(SigninViewModel.tokenData)")
                 
         }
     }

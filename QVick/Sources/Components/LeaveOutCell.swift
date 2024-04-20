@@ -25,18 +25,18 @@ struct LeaveOutCell: View {
     var body: some View {
         HStack(spacing: 0) {
             Text("\(dateFormatter.string(from: date))")
-                .font(.judson(.bold, 13))
+                .font(.pretendard(.bold, 13))
                 
             Spacer(minLength: 70)
             
             Text("\(reason)")
-                .font(.judson(.bold, 11))
+                .font(.pretendard(.bold, 11))
                 .multilineTextAlignment(.center)
             
             Spacer(minLength: 70)
             
             Text("\(accept ? "승인" : "미승인")")
-                .font(.judson(.bold, 13))
+                .font(.pretendard(.bold, 13))
                 .foregroundStyle(accept ? Color.baseGreen : Color.deepOrange)
                 
         }

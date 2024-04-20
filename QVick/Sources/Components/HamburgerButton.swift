@@ -14,7 +14,7 @@ struct HamburgerButton: View {
     
     var body: some View {
             
-        NavigationLink(destination: SettingsView(), label: {
+        NavigationLink(destination: view(), label: {
             VStack(spacing: 5) {
                     
                 Rectangle()

@@ -42,7 +42,7 @@ struct NextButton: View {
                     .foregroundStyle(Color.baseGreen)
                     .overlay {
                         Text("다음")
-                            .font(.judson(Judson.bold, 15))
+                            .font(.pretendard(.bold, 15))
                             .foregroundStyle(Color.white)
                     }
                 

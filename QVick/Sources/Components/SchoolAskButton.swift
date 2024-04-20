@@ -14,7 +14,7 @@ struct SchoolAskButton: View {
         HStack {
             
             Text("학교가 없어요")
-                .font(.judson(Judson.bold, 11))
+                .font(.pretendard(.bold, 11))
                 .foregroundStyle(Color(red: 144 / 255, green: 144 / 255, blue: 144 / 255))
             
             Button {
@@ -24,7 +24,7 @@ struct SchoolAskButton: View {
             } label: {
                 
                 Text("문의하기")
-                    .font(.judson(Judson.bold, 11))
+                    .font(.pretendard(.bold, 11))
                     .foregroundStyle(Color(red: 65 / 255, green: 201 / 255, blue: 130 / 255))
                 
             }
