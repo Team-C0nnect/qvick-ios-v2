@@ -40,8 +40,6 @@
 		453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01752B5F6F9A001C043C /* PersonalInfoView.swift */; };
 		453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453B01772B5F71D2001C043C /* GetInfoTextField.swift */; };
 		455B01432BD262D8001DEF2E /* FirstSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B01422BD262D8001DEF2E /* FirstSignupView.swift */; };
-		455B01482BD26AF1001DEF2E /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B01472BD26AF1001DEF2E /* SignupModel.swift */; };
-		455B014B2BD26BB3001DEF2E /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455B014A2BD26BB3001DEF2E /* SignupViewModel.swift */; };
 		45B391CF2B8B480800F784BB /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391CE2B8B480800F784BB /* UserDataModel.swift */; };
 		45B391D22B8B48B200F784BB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391D12B8B48B200F784BB /* ProfileViewModel.swift */; };
 		45B391D52B8B4EF400F784BB /* GetStdIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B391D42B8B4EF400F784BB /* GetStdIdResponse.swift */; };
@@ -118,8 +116,6 @@
 		453B01752B5F6F9A001C043C /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
 		453B01772B5F71D2001C043C /* GetInfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoTextField.swift; sourceTree = "<group>"; };
 		455B01422BD262D8001DEF2E /* FirstSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignupView.swift; sourceTree = "<group>"; };
-		455B01472BD26AF1001DEF2E /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
-		455B014A2BD26BB3001DEF2E /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		45B391CE2B8B480800F784BB /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		45B391D12B8B48B200F784BB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		45B391D42B8B4EF400F784BB /* GetStdIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStdIdResponse.swift; sourceTree = "<group>"; };
@@ -184,22 +180,6 @@
 				75881FD82B5A3B1B00850541 /* BundleExt.swift */,
 			);
 			path = Extenstion;
-			sourceTree = "<group>";
-		};
-		455B01462BD26ADE001DEF2E /* Signup */ = {
-			isa = PBXGroup;
-			children = (
-				455B01472BD26AF1001DEF2E /* SignupModel.swift */,
-			);
-			path = Signup;
-			sourceTree = "<group>";
-		};
-		455B01492BD26B86001DEF2E /* Signup */ = {
-			isa = PBXGroup;
-			children = (
-				455B014A2BD26BB3001DEF2E /* SignupViewModel.swift */,
-			);
-			path = Signup;
 			sourceTree = "<group>";
 		};
 		45B391CD2B8B47CA00F784BB /* UserData */ = {
@@ -349,7 +329,6 @@
 			children = (
 				45B391D32B8B4EE700F784BB /* Response */,
 				75CCB1042B71E77B008A030E /* Signin */,
-				455B01462BD26ADE001DEF2E /* Signup */,
 				75C030C22B6254FE00FD5485 /* SchoolSelection */,
 				75C030C42B62555700FD5485 /* PersonalData */,
 				75C030C52B62556500FD5485 /* GetInfo */,
@@ -367,7 +346,6 @@
 				75C030C62B62556C00FD5485 /* GetInfo */,
 				45B391D02B8B488900F784BB /* ProfileViewModel */,
 				75C030C72B62558700FD5485 /* Signin */,
-				455B01492BD26B86001DEF2E /* Signup */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -648,7 +626,6 @@
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
 				75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */,
 				7513C51B2B56534200A198E3 /* SchoolSelectionView.swift in Sources */,
-				455B014B2BD26BB3001DEF2E /* SignupViewModel.swift in Sources */,
 				426B53632B5F8AB700BDE077 /* LeaveOutView.swift in Sources */,
 				4290BE152BD15273008B6D65 /* SigninButton.swift in Sources */,
 				453B00FF2B562FC3001C043C /* ColorExt.swift in Sources */,
@@ -684,7 +661,6 @@
 				45B391D52B8B4EF400F784BB /* GetStdIdResponse.swift in Sources */,
 				426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
-				455B01482BD26AF1001DEF2E /* SignupModel.swift in Sources */,
 				75CCB1062B71E797008A030E /* SigninModel.swift in Sources */,
 				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */,
