@@ -48,12 +48,11 @@ struct SigninTextField: View {
                         TextField("Singin", text: $text, prompt: Text("\(prompt)").foregroundColor(.white))
                     }
                     else if type == .secure {
-                        SecureField("Singin", text: $text, prompt: Text("\(prompt)").foregroundColor(.white))
+                        SecureField("Singin", text: $text, prompt: Text("\(prompt)"))
                     }
                     
                 }
                     .font(.pretendard(.bold, 11))
-                    .tint(.white)
                     .foregroundStyle(Color.white)
                     .textInputAutocapitalization(.never)
                 
