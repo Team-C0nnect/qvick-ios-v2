@@ -15,7 +15,7 @@ struct ReasonCell: View {
     var body: some View {
         HStack {
             Text(title)
-                .font(.judson(.bold, 15))
+                .font(.pretendard(.bold, 15))
                 .foregroundStyle(.white)
             
             Spacer()

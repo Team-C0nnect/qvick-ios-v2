@@ -23,7 +23,6 @@ struct SleepOverView: View {
             
             Spacer()
             
-            ApplicationButton(action: "외박 신청")
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity, maxHeight: .infinity)

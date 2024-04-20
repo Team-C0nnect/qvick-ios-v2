@@ -31,7 +31,7 @@ struct LeaveOutList: View {
                         
                         Text("승인")
                     }
-                    .font(.judson(.bold, 13))
+                    .font(.pretendard(.bold, 13))
                     .padding(.horizontal, 45)
                     
                     ForEach(0..<leaveOutList.count) { i in

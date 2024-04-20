@@ -10,7 +10,6 @@ import Alamofire
 
 struct QRCameraView: View {
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var loginViewModel = SigninViewModel()
     @State var inputImage: UIImage?
     @State var value: String = ""
     
@@ -45,14 +44,14 @@ struct QRCameraView: View {
                             self.presentationMode.wrappedValue.dismiss()
                         } label: {
                             Image(systemName: "xmark")
-                                .font(.judson(.bold, 20))
+                                .font(.pretendard(.bold, 20))
                                 .foregroundStyle(Color.black)
                         }
                     }
                     .padding(.horizontal, 20)
                     
                     Text("QR 코드를 인식하여 출석체크를 해 주세요")
-                        .font(.judson(.bold, 16))
+                        .font(.pretendard(.bold, 16))
                     
                     Image("QRFrame")
                     

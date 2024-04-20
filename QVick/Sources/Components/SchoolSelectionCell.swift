@@ -28,10 +28,10 @@ struct SchoolSelectionCell: View {
                     VStack(alignment: .leading, spacing: 5) {
                         
                         Text("\(schoolName)")
-                            .font(.judson(Judson.bold, 20))
+                            .font(.pretendard(.bold, 20))
                         
                         Text("\(schoolAddress)")
-                            .font(.judson(Judson.regular, 11))
+                            .font(.pretendard(.regular, 11))
                             .foregroundStyle(Color(red: 144 / 255, green: 144 / 255, blue: 144 / 255))
                         
                     }

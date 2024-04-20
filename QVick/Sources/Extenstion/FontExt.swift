@@ -19,18 +19,9 @@ enum Pretendard: String {
     case thin = "Pretendard-Thin"
 }
 
-enum Judson: String {
-    
-    case bold = "Judson-Bold"
-    case italic = "Judson-Italic"
-    case regular = "Judson-Regular"
-}
+
 
 extension Font {
-    static func judson(_ judson: Judson, _ size: CGFloat) -> Font {
-        return Font.custom(judson.rawValue, size: size)
-    }
-    
     static func pretendard(_ pretendard: Pretendard, _ size: CGFloat) -> Font {
         return Font.custom(pretendard.rawValue, size: size)
     }

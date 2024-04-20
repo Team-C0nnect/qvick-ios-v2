@@ -38,30 +38,34 @@ struct SigninTextField: View {
                 .font(.pretendard(.bold, 16))
             
             
-            HStack(spacing: 13) {
-                Image(systemName: icon)
-                    .font(.system(size: 20))
-                    .foregroundStyle(Color.white)
-                
-                Group {
-                    if type == .just {
-                        TextField("Singin", text: $text, prompt: Text("\(prompt)").foregroundColor(.white))
-                    }
-                    else if type == .secure {
-                        SecureField("Singin", text: $text, prompt: Text("\(prompt)"))
-                    }
+            VStack(spacing: 10) {
+                HStack(spacing: 13) {
+                    Image(systemName: icon)
+                        .font(.system(size: 20))
+                        .foregroundStyle(Color.white)
                     
-                }
+                    Group {
+                        if type == .just {
+                            TextField("Signin", text: $text, prompt: Text("\(prompt)").foregroundColor(.white.opacity(0.4)))
+                        }
+                        else if type == .secure {
+                            SecureField("Signin", text: $text, prompt: Text("\(prompt)").foregroundColor(.white.opacity(0.4)))
+                                .textContentType(.password)
+                        }
+                        
+                    }
                     .font(.pretendard(.bold, 11))
                     .foregroundStyle(Color.white)
                     .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+
+                    
+                }
                 
+                Rectangle()
+                    .frame(height: 1)
+                    .foregroundStyle(Color.white)
             }
-            
-            Rectangle()
-                .frame(height: 1)
-                .foregroundStyle(Color.white)
-            
         }
         .padding(.horizontal, 28)
     }

@@ -20,18 +20,18 @@ struct ProfileCell: View {
                 
                 Text("\(title)")
                     .foregroundStyle(.white)
-                    .font(.judson(.regular, 13))
+                    .font(.pretendard(.regular, 13))
                     .padding(.bottom, 10)
                 
                 Spacer()
                 
                 if attendance != nil {
                     Text("\(name)")
-                        .font(.judson(.bold, 20))
+                        .font(.pretendard(.bold, 20))
                         .foregroundStyle(attendance! ? Color.baseGreen : Color.deepOrange)
                 } else {
                     Text("\(name)")
-                        .font(.judson(.bold, 20))
+                        .font(.pretendard(.bold, 20))
                         .foregroundStyle(.white)
                 }
 

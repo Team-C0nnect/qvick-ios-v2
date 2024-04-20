@@ -20,7 +20,7 @@ struct SchoolSelectionView: View {
                         .frame(width: 90, height: 45)
                     
                     Text("학교를 선택해주세요!")
-                        .font(.judson(Judson.regular, 14))
+                        .font(.pretendard(.regular, 14))
                         .foregroundStyle(Color.white)
                 }
                 
@@ -35,7 +35,7 @@ struct SchoolSelectionView: View {
                                 .frame(width: 20, height: 20)
                             
                             TextField("재학중인 학교 입력해주세요", text: $schoolSelcetion.content)
-                                .font(.judson(Judson.regular, 13))
+                                .font(.pretendard(.regular, 13))
                             
                         }
                         .padding(.horizontal, 20)

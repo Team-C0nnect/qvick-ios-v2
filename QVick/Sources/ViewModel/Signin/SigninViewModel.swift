@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import GoogleSignIn
-import GoogleSignInSwift
 import Alamofire
 
 class SigninViewModel: ObservableObject {
@@ -25,10 +23,10 @@ class SigninViewModel: ObservableObject {
     
     static var tokenData = SigninModel()
     
-    func SignIn() {
+    func signin() {
         guard let viewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
         
-        let nextVC = UIHostingController(rootView: PersonalDataView())
+        let nextVC = UIHostingController(rootView: MainView())
         nextVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         
         if (email != "") && (password != "") {
@@ -43,11 +41,13 @@ class SigninViewModel: ObservableObject {
                 switch response.result {
                 case .success(let data):
                     SigninViewModel.tokenData = data
+                    
                     print(SigninViewModel.tokenData.accessToken ?? "")
+                    
                     if !((SigninViewModel.tokenData.accessToken) == nil) {
                         viewController.present(nextVC, animated: true)
                     }
-                    return
+                    
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
