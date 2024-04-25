@@ -7,10 +7,12 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 public class ProfileViewModel: ObservableObject {
     
     @Published var model = ProfileModel()
+    @Published var isAlert = false
     
     
     func getUserInfo() {
@@ -30,6 +32,27 @@ public class ProfileViewModel: ObservableObject {
         }
         
     }
+    
+    func deleteUser() {
+        AF.request("\(Constant.url)/user",
+                   method: .delete,
+                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
+        )
+        .response() { response in
+            if let statusCode = response.response?.statusCode {
+                if statusCode == StatusCode.success.rawValue {
+                    UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        exit(0)
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    
+    
     
     
 }

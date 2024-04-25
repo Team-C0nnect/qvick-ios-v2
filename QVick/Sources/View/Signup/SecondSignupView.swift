@@ -72,7 +72,7 @@ struct SecondSignupView: View {
         .alert(isPresented: $vm.alert.0) {
             
             Alert(
-                title: Text("알림"),
+                title: Text("큐빅"),
                 message: Text(vm.alert.1),
                 dismissButton: .cancel(Text("확인")) {
                     vm.alert.2()

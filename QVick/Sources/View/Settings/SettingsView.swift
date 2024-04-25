@@ -63,8 +63,8 @@ struct SettingsView: View {
                     .padding(.vertical, 30)
             }
             
-            VStack(spacing: 30) {
-                HStack {
+            HStack {
+                VStack(alignment: .leading, spacing: 80) {
                     NavigationLink {
                         PersonalInfoView()
                     } label: {
@@ -79,15 +79,40 @@ struct SettingsView: View {
                         }
                     }
                     
-                    Spacer()
+                    Button {
+                        profileVM.isAlert = true
+                    } label: {
+                        Text("회원 탈퇴")
+                            .font(.pretendard(.bold, 20))
+                    }
+                    .tint(.deepOrange)
+                    
+                    
                 }
-                .padding(.horizontal, 40)
+                
+                Spacer()
             }
+            .padding(.horizontal, 40)
+            
             
             Spacer()
             
         }
         .padding(.vertical, 30)
+        .alert(isPresented: $profileVM.isAlert) {
+            Alert(
+                title: Text("큐빅"),
+                message: Text("정말 탈퇴하시겠습니까?"),
+                primaryButton: .destructive(
+                    Text("확인")
+                ) {
+                    profileVM.deleteUser()
+                },
+                secondaryButton: .cancel(
+                    Text("취소")
+                )
+            )
+        }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blueGray)
         .navigationBarBackButtonHidden()
