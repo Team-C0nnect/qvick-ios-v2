@@ -21,18 +21,25 @@ struct QRCameraView: View {
                 value = output.object as? String ?? ""
                 
                 if value != "" {
-                    let header: HTTPHeaders = [
-                        .authorization(bearerToken: SigninViewModel.tokenData.accessToken ?? " ")
-                    ]
+                    let header: HTTPHeaders = ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
+                    
                     
                     AF.request(
                         "\(Constant.url)/attendance",
                         method: .post,
-                        parameters: ["code" : value],
+                        parameters: ["code": value] as Dictionary,
                         encoding: JSONEncoding(),
                         headers: header
                     )
                     .validate()
+                    .response { response in
+                        if let statuscode = response.response?.statusCode {
+                            if statuscode == StatusCode.success.rawValue {
+                                self.presentationMode.wrappedValue.dismiss()
+                            }
+                            
+                        }
+                    }
                 }
             }
             .overlay {
@@ -54,9 +61,6 @@ struct QRCameraView: View {
                         .font(.pretendard(.bold, 16))
                     
                     Image("QRFrame")
-                    
-                    
-                    Text("\(value)")
                     
                     Spacer()
                 }

@@ -90,7 +90,7 @@ class QRCameraController: UIViewController, AVCaptureMetadataOutputObjectsDelega
             }
             
         } catch {
-            print(error)
+            
             
         }
     }

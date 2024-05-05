@@ -14,19 +14,20 @@ public class ProfileViewModel: ObservableObject {
     @Published var model = ProfileModel()
     @Published var isAlert = false
     
-    
     func getUserInfo() {
         
         AF.request("\(Constant.url)/user",
                    method: .get,
-                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
         .responseDecodable(of: ProfileModel.self) { response in
+            
             switch response.result {
             case .success(let data):
+                
                 self.model = data
-            case .failure(let e):
-                print(e.localizedDescription)
+            case .failure(_):
+                 break
             }
             
         }
@@ -36,15 +37,12 @@ public class ProfileViewModel: ObservableObject {
     func deleteUser() {
         AF.request("\(Constant.url)/user",
                    method: .delete,
-                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
         .response() { response in
             if let statusCode = response.response?.statusCode {
                 if statusCode == StatusCode.success.rawValue {
-                    UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        exit(0)
-                    }
+                    qvickExit()
                     
                 }
             }

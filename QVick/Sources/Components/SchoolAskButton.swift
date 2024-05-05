@@ -19,7 +19,7 @@ struct SchoolAskButton: View {
             
             Button {
                 
-                print("웹 뷰 보여주기")
+                
                 
             } label: {
                 

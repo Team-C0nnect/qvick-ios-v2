@@ -10,6 +10,7 @@ import Foundation
 struct Constant {
     
     static let url = Bundle.main.url
-    
+    static let accessToken = "accessToken"
+    static let refreshToken = "refreshToken"
 }
 

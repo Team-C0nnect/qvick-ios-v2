@@ -10,11 +10,11 @@ import Alamofire
 
 class MainViewModel: ObservableObject {
     @Published var isCheck: Bool = false
-    
+  
     func checkAttendence() {
         AF.request("\(Constant.url)/attendence",
                    method: .get,
-                   headers: ["Authorization": "Bearer \(SigninViewModel.tokenData.accessToken ?? "")"]
+                   headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
         .response { response in
             if let statuscode = response.response?.statusCode {
@@ -22,10 +22,28 @@ class MainViewModel: ObservableObject {
                     self.isCheck = true
                 }
                 else {
-                    if !self.isCheck == false {
+                    if self.isCheck == true {
                         self.isCheck = false
                     }
                 }
+            }
+        }
+    }
+    
+    func refresh() {
+        AF.request("\(Constant.url)/auth/refresh",
+                   method: .post,
+                   parameters: ["refreshToken": "Bearer \(KeyChain.read()?.accessToken ?? "")"] as Dictionary,
+                   encoding: JSONEncoding()
+        )
+        .responseDecodable(of: TokenModel.self) { response in
+            switch response.result {
+            case .success(let data):
+                if !KeyChain.update(token: data) {
+                    
+                }
+            case .failure(_):
+                break
             }
         }
     }

@@ -11,7 +11,6 @@ struct MainView: View {
     @StateObject var vm = MainViewModel()
     
     var body: some View {
-        NavigationView {
             VStack(spacing: 50) {
                 
                 HStack {
@@ -23,10 +22,23 @@ struct MainView: View {
                     
                     Spacer()
                     
-                    HamburgerButton(view: {
-                        AnyView(SettingsView().environmentObject(vm))
-                            
-                    })
+                    NavigationLink {
+                        SettingsView()
+                            .environmentObject(vm)
+                    } label: {
+                        VStack(spacing: 5) {
+                                
+                            Rectangle()
+                                .frame(width: 33, height: 4.5)
+                                
+                            Rectangle()
+                                .frame(width: 33, height: 4.5)
+                        
+                            Rectangle()
+                                .frame(width: 33, height: 4.5)
+                        }
+                        .foregroundStyle(.white)
+                    }
                     
                 }
                 .padding(.horizontal, 30)
@@ -50,6 +62,7 @@ struct MainView: View {
                     QRCheckButton(view: {
                         AnyView(QRCameraView())
                     })
+              
                 }
                 
                 Spacer()
@@ -59,14 +72,13 @@ struct MainView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.blueGray)
             .navigationBarBackButtonHidden()
-            .navigationBarHidden(true)
             .onAppear {
                 vm.checkAttendence()
             }
             
+            
         }
         
-    }
 }
 
 #Preview {

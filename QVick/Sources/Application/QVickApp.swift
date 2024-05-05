@@ -12,8 +12,17 @@ struct QVickApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SigninView()
-                    .navigationBarHidden(true)
+                Group {
+                    if KeyChain.read() == nil {
+                        SigninView()
+                    }
+                    else {
+                        MainView()
+                    }
+                            
+                    
+                }
+                .navigationBarHidden(true)
                     
             }
         }

@@ -39,6 +39,7 @@ struct SigninView: View {
             
             SigninButton(title: "로그인") {
                 signinViewModel.signin()
+                
             }
             .padding(.top, 50)
             

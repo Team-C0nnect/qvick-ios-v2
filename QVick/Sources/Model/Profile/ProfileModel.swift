@@ -10,7 +10,5 @@ import Foundation
 struct ProfileModel: Codable {
     var name: String = ""
     var stdId: String = ""
-    var room: String? = nil
-    
-    
+    var room: String? = nil 
 }

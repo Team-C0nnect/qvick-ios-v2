@@ -78,6 +78,18 @@ struct SettingsView: View {
                                 .foregroundStyle(.white)
                         }
                     }
+               
+                    
+                    Button {
+                        if KeyChain.delete() {
+                            qvickExit()
+                        }
+                        
+                    } label: {
+                        Text("로그아웃")
+                            .font(.pretendard(.bold, 20))
+                    }
+                    .tint(.deepOrange)
                     
                     Button {
                         profileVM.isAlert = true

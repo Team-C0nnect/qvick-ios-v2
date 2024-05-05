@@ -18,7 +18,7 @@ extension Bundle {
                
                return url
            } catch {
-              print(error)
+              
            }
         }
         

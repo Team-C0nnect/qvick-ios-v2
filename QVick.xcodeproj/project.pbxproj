@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		421652FD2BD23ED00078DA83 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421652FC2BD23ED00078DA83 /* SigninView.swift */; };
 		426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53562B58B6ED00BDE077 /* QRCheckButton.swift */; };
-		426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53582B58C41400BDE077 /* HamburgerButton.swift */; };
 		426B535D2B5E9D8300BDE077 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535C2B5E9D8300BDE077 /* SettingsView.swift */; };
 		426B535F2B5F880000BDE077 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B535E2B5F880000BDE077 /* RequestView.swift */; };
 		426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426B53602B5F8AAF00BDE077 /* SleepOverView.swift */; };
@@ -45,6 +44,8 @@
 		7513C5202B57753D00A198E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7513C51F2B57753D00A198E3 /* Alamofire */; };
 		7519FD2D2B83472A00443062 /* ApiContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7519FD2C2B83472A00443062 /* ApiContent.plist */; };
 		75413FAD2BD40B3D00A2C31D /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75413FAC2BD40B3D00A2C31D /* SigninModel.swift */; };
+		754AF4352BE137C8004D68E9 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754AF4342BE137C8004D68E9 /* KeyChain.swift */; };
+		756C7EE82BE7C70B00D58E5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756C7EE72BE7C70B00D58E5C /* Security.framework */; };
 		7572E4752B5E06FD00BC9A8A /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */; };
 		757D2A5F2BD21C2500D90291 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */; };
 		757D2A602BD21C2500D90291 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */; };
@@ -68,6 +69,8 @@
 		75AEA9E32B5F72400064BD16 /* QRCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */; };
 		75AEA9E52B5F73BC0064BD16 /* QRCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */; };
 		75CCB1062B71E797008A030E /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CCB1052B71E797008A030E /* TokenModel.swift */; };
+		75EA5DEE2BE105B100AD61B6 /* QRCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA5DED2BE105B100AD61B6 /* QRCameraViewModel.swift */; };
+		75EA5DF22BE11DAA00AD61B6 /* Exit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA5DF12BE11DAA00AD61B6 /* Exit.swift */; };
 		75ECC4172B5798EC00C26726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ECC4152B5798EC00C26726 /* WebView.swift */; };
 		75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC4192B579F7300C26726 /* GoogleSignIn */; };
 		75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75ECC41B2B579F7300C26726 /* GoogleSignInSwift */; };
@@ -80,7 +83,6 @@
 /* Begin PBXFileReference section */
 		421652FC2BD23ED00078DA83 /* SigninView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		426B53562B58B6ED00BDE077 /* QRCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCheckButton.swift; sourceTree = "<group>"; };
-		426B53582B58C41400BDE077 /* HamburgerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 		426B535C2B5E9D8300BDE077 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		426B535E2B5F880000BDE077 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		426B53602B5F8AAF00BDE077 /* SleepOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepOverView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,8 @@
 		7519FD2C2B83472A00443062 /* ApiContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiContent.plist; sourceTree = "<group>"; };
 		75348F012B4B8C4C0037FB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		75413FAC2BD40B3D00A2C31D /* SigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninModel.swift; sourceTree = "<group>"; };
+		754AF4342BE137C8004D68E9 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		756C7EE72BE7C70B00D58E5C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		757D2A562BD21C2400D90291 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		757D2A572BD21C2400D90291 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		75AEA9E22B5F72400064BD16 /* QRCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraRepresentable.swift; sourceTree = "<group>"; };
 		75AEA9E42B5F73BC0064BD16 /* QRCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraView.swift; sourceTree = "<group>"; };
 		75CCB1052B71E797008A030E /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		75EA5DED2BE105B100AD61B6 /* QRCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCameraViewModel.swift; sourceTree = "<group>"; };
+		75EA5DF12BE11DAA00AD61B6 /* Exit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exit.swift; sourceTree = "<group>"; };
 		75ECC4152B5798EC00C26726 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		75ECC41D2B579F9800C26726 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
 		75F789822B58B716004A80BD /* LeaveOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutCell.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756C7EE82BE7C70B00D58E5C /* Security.framework in Frameworks */,
 				75ECC41C2B579F7300C26726 /* GoogleSignInSwift in Frameworks */,
 				7513C5202B57753D00A198E3 /* Alamofire in Frameworks */,
 				75ECC41A2B579F7300C26726 /* GoogleSignIn in Frameworks */,
@@ -195,6 +202,7 @@
 				7509BB132B4B88A5005A62AD /* QVick */,
 				7509BB122B4B88A5005A62AD /* Products */,
 				75ECC4132B57981500C26726 /* Recovered References */,
+				756C7EE62BE7C70B00D58E5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,7 +275,6 @@
 				75F789822B58B716004A80BD /* LeaveOutCell.swift */,
 				75F789842B58C019004A80BD /* LeaveOutList.swift */,
 				426B53562B58B6ED00BDE077 /* QRCheckButton.swift */,
-				426B53582B58C41400BDE077 /* HamburgerButton.swift */,
 				7572E4742B5E06FD00BC9A8A /* ToggleButton.swift */,
 				453B01732B5E24BA001C043C /* ProfileCell.swift */,
 				75A597772BD3BDA600B42A4C /* QRCamera */,
@@ -314,6 +321,7 @@
 		755641412B56101900F15ACD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				75EA5DEC2BE1059C00AD61B6 /* QRCamera */,
 				75A597882BD3FDE800B42A4C /* Main */,
 				75A597782BD3C12C00B42A4C /* Signup */,
 				75C030C12B6254F300FD5485 /* SchoolSelection */,
@@ -324,11 +332,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		756C7EE62BE7C70B00D58E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756C7EE72BE7C70B00D58E5C /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75881FD32B5A321500850541 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				754AF4342BE137C8004D68E9 /* KeyChain.swift */,
 				75881FD42B5A322100850541 /* Constant.swift */,
 				75A597822BD3E8A400B42A4C /* StatusCode.swift */,
+				75EA5DF12BE11DAA00AD61B6 /* Exit.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -515,6 +533,14 @@
 			path = Signin;
 			sourceTree = "<group>";
 		};
+		75EA5DEC2BE1059C00AD61B6 /* QRCamera */ = {
+			isa = PBXGroup;
+			children = (
+				75EA5DED2BE105B100AD61B6 /* QRCameraViewModel.swift */,
+			);
+			path = QRCamera;
+			sourceTree = "<group>";
+		};
 		75ECC4132B57981500C26726 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A5977A2BD3C13D00B42A4C /* SignupViewModel.swift in Sources */,
+				75EA5DF22BE11DAA00AD61B6 /* Exit.swift in Sources */,
 				426B535D2B5E9D8300BDE077 /* SettingsView.swift in Sources */,
 				75ECC4172B5798EC00C26726 /* WebView.swift in Sources */,
 				453B00FD2B562B5B001C043C /* FontExt.swift in Sources */,
@@ -646,11 +673,11 @@
 				453B01012B56662B001C043C /* PersonalDataModel.swift in Sources */,
 				75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */,
 				45B391CF2B8B480800F784BB /* ProfileModel.swift in Sources */,
+				75EA5DEE2BE105B100AD61B6 /* QRCameraViewModel.swift in Sources */,
 				426B53672B5F8D2400BDE077 /* DatePickerCell.swift in Sources */,
 				426B53572B58B6ED00BDE077 /* QRCheckButton.swift in Sources */,
 				75A597832BD3E8A400B42A4C /* StatusCode.swift in Sources */,
 				75CCB1062B71E797008A030E /* TokenModel.swift in Sources */,
-				426B53592B58C41400BDE077 /* HamburgerButton.swift in Sources */,
 				75AEA9E12B5F6BB70064BD16 /* QRCameraController.swift in Sources */,
 				426B535F2B5F880000BDE077 /* RequestView.swift in Sources */,
 				42AEB7392B56506800C6B1CB /* SchoolSelectionModel.swift in Sources */,
@@ -662,6 +689,7 @@
 				42AEB7372B56503600C6B1CB /* SchoolSelectionViewModel.swift in Sources */,
 				426B53612B5F8AAF00BDE077 /* SleepOverView.swift in Sources */,
 				453B01782B5F71D2001C043C /* GetInfoTextField.swift in Sources */,
+				754AF4352BE137C8004D68E9 /* KeyChain.swift in Sources */,
 				453B01762B5F6F9A001C043C /* PersonalInfoView.swift in Sources */,
 				75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */,
 			);
@@ -804,6 +832,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "큐빅";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -840,6 +869,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "큐빅";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSCameraUsageDescription = "QR 스캔을 하려면 카메라를 허용해야 합니다.";
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
