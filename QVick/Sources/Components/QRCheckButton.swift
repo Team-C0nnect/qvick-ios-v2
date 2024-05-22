@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import LocalAuthentication
+
 
 struct QRCheckButton: View {
     
@@ -13,11 +15,19 @@ struct QRCheckButton: View {
     
     let view: () -> AnyView
     
+    let context = LAContext()
+    
     var body: some View {
         
-        Button(action: {
-            isPresented.toggle()
-        }, label: {
+        Button {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "인증이 필요합니다.") { (result, error) in
+                DispatchQueue.main.async {
+                    isPresented = result
+                }
+                
+            }
+            
+        } label: {
             RoundedRectangle(cornerRadius: 15)
                 .frame(width: 336, height: 97)
                 .foregroundStyle(.white)
@@ -43,7 +53,7 @@ struct QRCheckButton: View {
                             .padding(.trailing)
                     }
                 }
-        })
+        }
         .tint(.black)
         .sheet(isPresented: $isPresented) {
             if #available(iOS 16, *) {

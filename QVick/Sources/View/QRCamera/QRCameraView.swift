@@ -11,35 +11,24 @@ import Alamofire
 struct QRCameraView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var inputImage: UIImage?
-    @State var value: String = ""
+    @StateObject var cameraVM = QRCameraViewModel()
     
     let valueFromController = NotificationCenter.default.publisher(for: NSNotification.Name("QR Scan"))
     
     var body: some View {
-        QRCameraRepresentable(image: $inputImage, value: $value)
+        QRCameraRepresentable(image: $inputImage, value: $cameraVM.value)
             .onReceive(valueFromController) { (output) in
-                value = output.object as? String ?? ""
+                
+                let value = output.object as? String ?? ""
                 
                 if value != "" {
-                    let header: HTTPHeaders = ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
                     
                     
-                    AF.request(
-                        "\(Constant.url)/attendance",
-                        method: .post,
-                        parameters: ["code": value] as Dictionary,
-                        encoding: JSONEncoding(),
-                        headers: header
-                    )
-                    .validate()
-                    .response { response in
-                        if let statuscode = response.response?.statusCode {
-                            if statuscode == StatusCode.success.rawValue {
-                                self.presentationMode.wrappedValue.dismiss()
-                            }
-                            
-                        }
+                    cameraVM.isCompleted = {
+                        self.presentationMode.wrappedValue.dismiss()
                     }
+                    
+                    cameraVM.attendance(value: value)
                 }
             }
             .overlay {

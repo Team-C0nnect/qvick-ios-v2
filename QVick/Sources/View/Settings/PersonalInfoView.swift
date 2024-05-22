@@ -68,7 +68,7 @@ struct PersonalInfoView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
         .onAppear {
-            AF.request("\(Constant.url)/terms/use-term",
+            AF.request("\(Constant.url)/terms/privacy-policy",
                        method: .get
             )
             .response { response in
