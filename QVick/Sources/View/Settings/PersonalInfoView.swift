@@ -10,8 +10,13 @@ import Alamofire
 
 struct PersonalInfoView: View {
     
+    let title: String
+    let url: String
+    
+    
     @Environment(\.presentationMode) var presentationMode
     @State var text: String = ""
+    
     
     var body: some View {
         VStack {
@@ -29,7 +34,7 @@ struct PersonalInfoView: View {
                     
                     Spacer()
                     
-                    Text("이용약관")
+                    Text(title)
                         .font(.pretendard(.bold, 24))
                         .foregroundStyle(Color.white)
                         .padding(.trailing, 20)
@@ -68,7 +73,7 @@ struct PersonalInfoView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blackGray)
         .onAppear {
-            AF.request("\(Constant.url)/terms/privacy-policy",
+            AF.request("\(Constant.url)\(url)",
                        method: .get
             )
             .response { response in
@@ -85,6 +90,4 @@ struct PersonalInfoView: View {
     }
 }
 
-#Preview {
-    PersonalInfoView()
-}
+

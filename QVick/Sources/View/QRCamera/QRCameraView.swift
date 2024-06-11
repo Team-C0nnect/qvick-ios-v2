@@ -12,6 +12,7 @@ struct QRCameraView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var inputImage: UIImage?
     @StateObject var cameraVM = QRCameraViewModel()
+    @EnvironmentObject var mainVM: MainViewModel
     
     let valueFromController = NotificationCenter.default.publisher(for: NSNotification.Name("QR Scan"))
     
@@ -22,12 +23,6 @@ struct QRCameraView: View {
                 let value = output.object as? String ?? ""
                 
                 if value != "" {
-                    
-                    
-                    cameraVM.isCompleted = {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }
-                    
                     cameraVM.attendance(value: value)
                 }
             }
@@ -54,6 +49,12 @@ struct QRCameraView: View {
                     Spacer()
                 }
                 .padding(.vertical, 10)
+            }
+            .alert("출석이 완료되었습니다.", isPresented: $cameraVM.isAlert) {
+                Button("완료") {
+                    self.presentationMode.wrappedValue.dismiss()
+                    mainVM.checkAttendence()
+                }
             }
     }
 }

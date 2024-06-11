@@ -66,10 +66,10 @@ struct SettingsView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 80) {
                     NavigationLink {
-                        PersonalInfoView()
+                        PersonalInfoView(title: "서비스 이용약관", url: "/terms/use-term")
                     } label: {
                         VStack(spacing: 2) {
-                            Text("개인정보 약관")
+                            Text("서비스 이용약관")
                                 .font(.pretendard(.bold, 20))
                                 .foregroundStyle(.white)
                             
@@ -79,6 +79,19 @@ struct SettingsView: View {
                         }
                     }
                
+                    NavigationLink {
+                        PersonalInfoView(title: "개인정보 처리약관", url: "/terms/privacy-policy")
+                    } label: {
+                        VStack(spacing: 2) {
+                            Text("개인정보 처리약관")
+                                .font(.pretendard(.bold, 20))
+                                .foregroundStyle(.white)
+                            
+                            Rectangle()
+                                .frame(width: 110, height: 1)
+                                .foregroundStyle(.white)
+                        }
+                    }
                     
                     Button {
                         if KeyChain.delete() {

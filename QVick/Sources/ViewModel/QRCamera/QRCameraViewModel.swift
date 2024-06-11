@@ -5,10 +5,8 @@ import Alamofire
 
 class QRCameraViewModel: ObservableObject {
     @Published var value: String = ""
+    @Published var isAlert: Bool = false
     
-    var isCompleted = {
-        
-    }
     
     func attendance(value: String) {
         let header: HTTPHeaders = ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
@@ -24,8 +22,8 @@ class QRCameraViewModel: ObservableObject {
         .validate()
         .response { response in
             if let statuscode = response.response?.statusCode {
-                if statuscode == StatusCode.success.rawValue {
-                    self.isCompleted()
+                if statuscode == StatusCode.created.rawValue {
+                    self.isAlert = true
                 }
                 
             }

@@ -60,7 +60,7 @@ struct MainView: View {
                     .padding(.horizontal, 30)
                     
                     QRCheckButton(view: {
-                        AnyView(QRCameraView())
+                        AnyView(QRCameraView().environmentObject(vm))
                     })
               
                 }
