@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>kr.hs.dgsw.Qvick</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -13,6 +17,8 @@
 			</array>
 		</dict>
 	</array>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
 	<key>GIDClientID</key>
 	<string>246755219900-e9b02h2i109s7gj0cpp62s7ooqkhvt9m.apps.googleusercontent.com</string>
 	<key>NSAppTransportSecurity</key>
@@ -38,7 +44,5 @@
 		<string>processing</string>
 		<string>remote-notification</string>
 	</array>
-	<key>FirebaseAppDelegateProxyEnabled</key>
-	<false/>
 </dict>
 </plist>

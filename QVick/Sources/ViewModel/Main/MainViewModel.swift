@@ -12,19 +12,16 @@ class MainViewModel: ObservableObject {
     @Published var isCheck: Bool = false
   
     func checkAttendence() {
-        AF.request("\(Constant.url)/attendence",
+        AF.request("\(Constant.url)/attendance",
                    method: .get,
                    headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
         .response { response in
+            
             if let statuscode = response.response?.statusCode {
+                print(statuscode)
                 if statuscode == StatusCode.success.rawValue {
                     self.isCheck = true
-                }
-                else {
-                    if self.isCheck == true {
-                        self.isCheck = false
-                    }
                 }
             }
         }
