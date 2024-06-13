@@ -74,7 +74,7 @@ struct SettingsView: View {
                                 .foregroundStyle(.white)
                             
                             Rectangle()
-                                .frame(width: 110, height: 1)
+                                .frame(width: 120, height: 1)
                                 .foregroundStyle(.white)
                         }
                     }
@@ -88,7 +88,7 @@ struct SettingsView: View {
                                 .foregroundStyle(.white)
                             
                             Rectangle()
-                                .frame(width: 110, height: 1)
+                                .frame(width: 134, height: 1)
                                 .foregroundStyle(.white)
                         }
                     }

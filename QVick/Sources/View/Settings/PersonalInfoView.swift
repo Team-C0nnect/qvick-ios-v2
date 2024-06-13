@@ -80,7 +80,7 @@ struct PersonalInfoView: View {
                 switch response.result {
                 case .success(let data):
                     self.text = String(htmlEncodedString: String(decoding: data ?? .init(), as: UTF8.self)) ?? ""
-                case .failure(let error):
+                case .failure(_):
                     break
                 }
             }

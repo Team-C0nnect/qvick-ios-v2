@@ -13,7 +13,7 @@ class QRCameraViewModel: ObservableObject {
         
         
         AF.request(
-            "\(Constant.url)/attendance",
+            "\(Constant.url)/user/attendance",
             method: .post,
             parameters: ["code": value] as Dictionary,
             encoding: JSONEncoding(),
@@ -22,7 +22,7 @@ class QRCameraViewModel: ObservableObject {
         .validate()
         .response { response in
             if let statuscode = response.response?.statusCode {
-                if statuscode == StatusCode.created.rawValue {
+                if statuscode == StatusCode.success.rawValue {
                     self.isAlert = true
                 }
                 

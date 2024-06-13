@@ -47,6 +47,9 @@ struct FirstSignupView: View {
                 SecondSignupView()
                     .navigationBarBackButtonHidden()
                     .environmentObject(vm)
+                    .onAppear {
+                        vm.rootActive = true
+                    }
             } label: {
                 SigninButton(title: "다음") {
                 }
