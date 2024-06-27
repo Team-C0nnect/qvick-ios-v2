@@ -35,6 +35,7 @@ struct SigninView: View {
             
             SigninTextField(title: "이메일", icon: "person.fill", text: $signinViewModel.model.email, prompt: "이메일을 입력 해주세요")
                 .padding(.vertical)
+            
             SigninTextField(title: "비밀번호", icon: "lock.fill", text: $signinViewModel.model.password, prompt: "비밀번호를 입력 해주세요", type: .secure)
             
             SigninButton(title: "로그인") {

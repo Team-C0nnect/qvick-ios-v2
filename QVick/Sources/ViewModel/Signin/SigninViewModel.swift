@@ -26,14 +26,18 @@ class SigninViewModel: ObservableObject {
                        
             )
             .validate()
-            .responseDecodable(of: TokenModel.self) { response in
+            .responseDecodable(of: StatusModel<TokenModel>.self) { response in
+                
                 switch response.result {
-                case .success(let data):
-                    if KeyChain.create(token: data) {
-                        viewController.present(nextVC, animated: true)
-                    }
-                    else {
-                        
+                case .success(let result):
+                    
+                    if let data = result.data {
+                        if KeyChain.create(token: data) {
+                            viewController.present(nextVC, animated: true)
+                        }
+                        else {
+                            
+                        }
                     }
                    
                     

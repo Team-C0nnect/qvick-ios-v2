@@ -10,20 +10,27 @@ import Alamofire
 
 class MainViewModel: ObservableObject {
     @Published var isCheck: Bool = false
+    @Published var isAlert: Bool = false
   
     func checkAttendence() {
-        AF.request("\(Constant.url)/attendance",
+        AF.request("\(Constant.url)/user/status",
                    method: .get,
                    headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
-        .response { response in
+        .responseDecodable(of: StatusModel<Empty>.self) { response in
             
-            if let statuscode = response.response?.statusCode {
-                print(statuscode)
-                if statuscode == StatusCode.success.rawValue {
+            switch response.result {
+            case .success(let result):
+                if result.status == StatusCode.success.rawValue {
                     self.isCheck = true
                 }
+                else {
+                    self.isCheck = false
+                }
+            case .failure(_):
+                break
             }
+            
         }
     }
     

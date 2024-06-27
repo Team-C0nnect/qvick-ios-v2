@@ -59,9 +59,15 @@ struct MainView: View {
                     }
                     .padding(.horizontal, 30)
                     
-                    QRCheckButton(view: {
-                        AnyView(QRCameraView().environmentObject(vm))
-                    })
+                    Button {
+                        vm.isAlert.toggle()
+                    } label: {
+                        QRCheckButton(view: {
+                            AnyView(QRCameraView().environmentObject(vm))
+                        })
+                        .disabled(vm.isCheck)
+                    }
+                   
               
                 }
                 
@@ -74,6 +80,14 @@ struct MainView: View {
             .navigationBarBackButtonHidden()
             .onAppear {
                 vm.checkAttendence()
+                
+            }
+            .alert("출석이 완료되었습니다.", isPresented: $vm.isAlert) {
+                Button(role: .cancel) {
+                    
+                } label: {
+                    Text("확인")
+                }
             }
             
             

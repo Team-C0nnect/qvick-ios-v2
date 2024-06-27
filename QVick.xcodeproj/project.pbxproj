@@ -81,6 +81,7 @@
 		75F789832B58B716004A80BD /* LeaveOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789822B58B716004A80BD /* LeaveOutCell.swift */; };
 		75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789842B58C019004A80BD /* LeaveOutList.swift */; };
 		75F789872B58CECB004A80BD /* LeaveOutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F789862B58CECB004A80BD /* LeaveOutModel.swift */; };
+		F2AAC20E2C2B16F1008E8F32 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AAC20D2C2B16F1008E8F32 /* StatusModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,6 +158,7 @@
 		75F789822B58B716004A80BD /* LeaveOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutCell.swift; sourceTree = "<group>"; };
 		75F789842B58C019004A80BD /* LeaveOutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutList.swift; sourceTree = "<group>"; };
 		75F789862B58CECB004A80BD /* LeaveOutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveOutModel.swift; sourceTree = "<group>"; };
+		F2AAC20D2C2B16F1008E8F32 /* StatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 		755641402B56101400F15ACD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2AAC20D2C2B16F1008E8F32 /* StatusModel.swift */,
 				75A5977D2BD3DFD800B42A4C /* Signup */,
 				75CCB1042B71E77B008A030E /* Signin */,
 				75C030C22B6254FE00FD5485 /* SchoolSelection */,
@@ -664,6 +667,7 @@
 				75A5977F2BD3DFE200B42A4C /* SignupModel.swift in Sources */,
 				75F789852B58C019004A80BD /* LeaveOutList.swift in Sources */,
 				453B01092B579A2A001C043C /* NextButton.swift in Sources */,
+				F2AAC20E2C2B16F1008E8F32 /* StatusModel.swift in Sources */,
 				75A5977C2BD3D58200B42A4C /* ProfileViewModel.swift in Sources */,
 				7509BB172B4B88A5005A62AD /* ContentView.swift in Sources */,
 				453B00F82B561FCA001C043C /* SchoolSelectionCell.swift in Sources */,
@@ -857,7 +861,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.22;
+				MARKETING_VERSION = 1.0.23;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.Qvick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -896,7 +900,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.22;
+				MARKETING_VERSION = 1.0.23;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.hs.dgsw.Qvick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

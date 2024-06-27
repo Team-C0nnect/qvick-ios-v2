@@ -20,12 +20,13 @@ public class ProfileViewModel: ObservableObject {
                    method: .get,
                    headers: ["Authorization": "Bearer \(KeyChain.read()?.accessToken ?? "")"]
         )
-        .responseDecodable(of: ProfileModel.self) { response in
+        .responseDecodable(of: StatusModel<ProfileModel>.self) { response in
             
             switch response.result {
-            case .success(let data):
-                
-                self.model = data
+            case .success(let result):
+                if let data = result.data {
+                    self.model = data
+                }
             case .failure(_):
                  break
             }
@@ -42,6 +43,8 @@ public class ProfileViewModel: ObservableObject {
         .response() { response in
             if let statusCode = response.response?.statusCode {
                 if statusCode == StatusCode.success.rawValue {
+                    KeyChain.delete()
+                    
                     qvickExit()
                     
                 }

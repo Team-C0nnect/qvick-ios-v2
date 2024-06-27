@@ -40,6 +40,7 @@ struct QRCheckButton: View {
                                 Image(systemName: "qrcode.viewfinder")
                                     .resizable()
                                     .frame(width: 45, height: 45)
+                                    .foregroundStyle(Color.black)
                             }
                             .padding(.leading)
                         
@@ -47,10 +48,12 @@ struct QRCheckButton: View {
                         
                         Text("출석하기")
                             .font(.pretendard(.bold, 20))
+                            .foregroundStyle(Color.black)
                         
                         Image(systemName: "chevron.right")
                             .font(.pretendard(.bold, 20))
                             .padding(.trailing)
+                            .foregroundStyle(Color.black)
                     }
                 }
         }

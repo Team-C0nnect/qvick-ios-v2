@@ -14,20 +14,22 @@ class SignupViewModel: ObservableObject {
                    parameters: model.params,
                    encoding: JSONEncoding()
         )
-        .response { response in
-            if let statuscode = response.response?.statusCode {
+        .responseDecodable(of: StatusModel<Empty>.self) { response in
+            switch response.result {
+            case .success(let result):
                 
-                if statuscode == StatusCode.created.rawValue {
+                if result.status == StatusCode.created.rawValue {
                     self.alert = (true, "회원가입이 완료되었습니다.", {
-                        self.rootActive = false
+                        self.rootActive.toggle()
                     })
-                    
                 }
                 else {
                     self.alert = (true, "이미 존재하는 회원입니다.", {
                         
                     })
                 }
+            case .failure(_):
+                break
             }
         }
     }

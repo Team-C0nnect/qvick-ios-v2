@@ -36,7 +36,7 @@ struct SecondSignupView: View {
                 
                 SigninTextField(title: "자신의 학번을 작성해주세요.", icon: "person.fill", text: $vm.model.stdId, prompt: "ex): 2210")
                 
-                SigninTextField(title: "자신의 기숙사 호실을 작성해주세요.", icon: "bed.double.fill", text: $vm.model.room, prompt: "ex): 301호")
+                SigninTextField(title: "자신의 기숙사 호실을 작성해주세요.", icon: "bed.double.fill", text: $vm.model.room, prompt: "ex): 301")
             }
             
             Spacer()
